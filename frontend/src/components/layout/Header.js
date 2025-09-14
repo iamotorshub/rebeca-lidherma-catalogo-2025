@@ -60,14 +60,21 @@ const Header = () => {
       {/* Main Header */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          {/* Logo Section */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-[#2d5aa0] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">R</span>
-            </div>
+          {/* Logo Section con imagen real */}
+          <Link to="/" className="flex items-center space-x-3 hover-lift">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_8be3063f-542a-4d08-acb0-b16243d79b54/artifacts/8ka0w66z_LOGO%20BEAUTY.jpeg"
+              alt="Rebeca Beauty Store"
+              className="h-16 md:h-20 w-auto object-contain"
+              onError={(e) => {
+                e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiNGQURBREQiLz4KPHR0ZXh0IHg9IjQwIiB5PSI1MCIgZm9udC1mYW1pbHk9IlBsYXlmYWlyIERpc3BsYXkiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiM0QTRBNEEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlI8L3RleHQ+Cjwvc3ZnPgo=';
+              }}
+            />
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-[#2d5aa0]">Rebeca Beauty Store</h1>
-              <p className="text-sm text-gray-600">Distribuidor Oficial Lidherma</p>
+              <h1 className="text-xl md:text-2xl font-playfair font-semibold text-gray-700">
+                Rebeca Beauty Store
+              </h1>
+              <p className="text-sm text-gray-500 font-lato">Distribuidor Oficial Lidherma</p>
             </div>
           </Link>
           
@@ -79,12 +86,12 @@ const Header = () => {
                 placeholder="Buscar productos, líneas..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-4 pr-12 py-2 border rounded-lg focus:ring-2 focus:ring-[#2d5aa0] focus:border-transparent"
+                className="w-full pl-4 pr-12 py-3 border-2 border-pink-200 rounded-full focus:ring-2 focus:ring-pink-300 focus:border-pink-300 bg-pink-50"
               />
               <Button 
                 type="submit"
                 size="sm"
-                className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-[#2d5aa0] hover:bg-[#1a4480]"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 btn-pastel rounded-full w-8 h-8 p-0"
               >
                 <Search className="h-4 w-4" />
               </Button>
@@ -95,40 +102,40 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             {/* Professional Badge */}
             {isProfessional && (
-              <Badge className="bg-[#28a745] text-white hidden sm:flex">
+              <Badge className="bg-gradient-to-r from-purple-200 to-pink-200 text-purple-800 hidden sm:flex border-none">
                 <User className="h-3 w-3 mr-1" />
                 Profesional
               </Badge>
             )}
             
             {/* Favorites */}
-            <Button variant="ghost" className="text-gray-600 hover:text-[#2d5aa0] relative">
+            <Button variant="ghost" className="text-gray-600 hover:text-pink-600 relative hover-lift">
               <Heart className="h-5 w-5" />
               {favoriteProducts.length > 0 && (
-                <Badge className="absolute -top-2 -right-2 bg-[#e63946] text-white text-xs min-w-[16px] h-4 flex items-center justify-center p-0">
+                <Badge className="absolute -top-2 -right-2 bg-pink-400 text-white text-xs min-w-[16px] h-4 flex items-center justify-center p-0 border-none">
                   {favoriteProducts.length}
                 </Badge>
               )}
-              <span className="hidden sm:inline ml-2">Favoritos</span>
+              <span className="hidden sm:inline ml-2 font-lato">Favoritos</span>
             </Button>
             
             {/* Cart */}
             <Link to="/carrito">
-              <Button variant="ghost" className="text-gray-600 hover:text-[#2d5aa0] relative">
+              <Button variant="ghost" className="text-gray-600 hover:text-pink-600 relative hover-lift">
                 <ShoppingCart className="h-5 w-5" />
                 {itemCount > 0 && (
-                  <Badge className="absolute -top-2 -right-2 bg-[#e63946] text-white text-xs min-w-[16px] h-4 flex items-center justify-center p-0">
+                  <Badge className="absolute -top-2 -right-2 bg-pink-400 text-white text-xs min-w-[16px] h-4 flex items-center justify-center p-0 border-none">
                     {itemCount}
                   </Badge>
                 )}
-                <span className="hidden sm:inline ml-2">Carrito</span>
+                <span className="hidden sm:inline ml-2 font-lato">Carrito</span>
               </Button>
             </Link>
             
             {/* WhatsApp */}
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-[#28a745] hover:bg-[#20852e] text-white px-4 py-2 rounded-lg font-medium hidden sm:flex items-center"
+              className="btn-lavender hidden sm:flex items-center font-lato"
             >
               <MessageCircle className="h-4 w-4 mr-2" />
               WhatsApp
@@ -138,7 +145,7 @@ const Header = () => {
             <Button
               variant="ghost"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden"
+              className="md:hidden text-gray-600 hover:text-pink-600"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -153,12 +160,12 @@ const Header = () => {
               placeholder="Buscar productos..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-4 pr-12 py-2 border rounded-lg focus:ring-2 focus:ring-[#2d5aa0]"
+              className="w-full pl-4 pr-12 py-3 border-2 border-pink-200 rounded-full focus:ring-2 focus:ring-pink-300 bg-pink-50"
             />
             <Button 
               type="submit"
               size="sm"
-              className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-[#2d5aa0] hover:bg-[#1a4480]"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 btn-pastel rounded-full w-8 h-8 p-0"
             >
               <Search className="h-4 w-4" />
             </Button>
@@ -166,13 +173,13 @@ const Header = () => {
         </div>
         
         {/* Navigation Menu - Desktop */}
-        <nav className="border-t py-3 hidden md:block">
-          <ul className="flex space-x-8 text-sm font-medium">
+        <nav className="border-t py-4 hidden md:block border-pink-100">
+          <ul className="flex space-x-8 text-sm font-medium font-lato justify-center">
             {navigation.map((item) => (
               <li key={item.name}>
                 <Link 
                   to={item.href}
-                  className="text-gray-700 hover:text-[#2d5aa0] transition-colors duration-200"
+                  className="text-gray-600 hover:text-pink-600 transition-colors duration-300 px-3 py-2 rounded-full hover:bg-pink-50"
                 >
                   {item.name}
                 </Link>
@@ -184,24 +191,24 @@ const Header = () => {
       
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <nav className="container mx-auto px-4 py-4">
+        <div className="md:hidden bg-white border-t border-pink-100 beauty-card rounded-b-3xl mx-4 mb-2">
+          <nav className="container mx-auto px-4 py-6">
             <ul className="space-y-4">
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link 
                     to={item.href}
-                    className="block text-gray-700 hover:text-[#2d5aa0] font-medium"
+                    className="block text-gray-700 hover:text-pink-600 font-medium font-lato py-2 px-4 rounded-full hover:bg-pink-50 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
                 </li>
               ))}
-              <li className="pt-4 border-t">
+              <li className="pt-4 border-t border-pink-100">
                 <Button 
                   onClick={handleWhatsAppClick}
-                  className="w-full bg-[#28a745] hover:bg-[#20852e] text-white flex items-center justify-center"
+                  className="w-full btn-lavender flex items-center justify-center font-lato"
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
                   Contactar por WhatsApp
