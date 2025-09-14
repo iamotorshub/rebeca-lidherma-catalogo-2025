@@ -1,19 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+:root {
+    /* Nueva paleta pastel y femenina */
+    --primary-pink: #FADADD;
+    --lavender: #E6E6FA;
+    --soft-gold: #F9E79F;
+    --pure-white: #FFFFFF;
+    --light-pink: #FFF0F5;
+    --dusty-rose: #F4C2C2;
+    --soft-purple: #D8BFD8;
+    --cream: #FFF8DC;
+    --text-dark: #4A4A4A;
+    --text-medium: #6B6B6B;
+    --text-light: #8A8A8A;
+    --border-soft: #F0E6F6;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+body {
+    margin: 0;
+    font-family: 'Lato', 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--light-pink);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Transiciones suaves globales */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Estilo para cards */
+.beauty-card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(250, 218, 221, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-soft);
+}
+
+.beauty-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(250, 218, 221, 0.4);
+}
+
+/* Botones pastel */
+.btn-pastel {
+    background: linear-gradient(135deg, var(--primary-pink), var(--dusty-rose));
+    color: var(--text-dark);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 28px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(250, 218, 221, 0.3);
+}
+
+.btn-pastel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(250, 218, 221, 0.5);
+    background: linear-gradient(135deg, var(--dusty-rose), var(--primary-pink));
+}
+
+.btn-lavender {
+    background: linear-gradient(135deg, var(--lavender), var(--soft-purple));
+    color: var(--text-dark);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 28px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(230, 230, 250, 0.3);
+}
+
+.btn-lavender:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 230, 250, 0.5);
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, var(--soft-gold), #F7DC6F);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 28px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(249, 231, 159, 0.3);
+}
+
+.btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 231, 159, 0.5);
+}
+
+/* Gradientes suaves */
+.gradient-pink {
+    background: linear-gradient(135deg, var(--light-pink) 0%, var(--primary-pink) 100%);
+}
+
+.gradient-lavender {
+    background: linear-gradient(135deg, var(--pure-white) 0%, var(--lavender) 100%);
+}
+
+.gradient-gold {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--soft-gold) 100%);
+}
+
+/* Hover effects suaves */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+}
+
+/* Espaciado generoso */
+.section-padding {
+    padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 2.5rem 1rem;
+    }
 }
 
 
