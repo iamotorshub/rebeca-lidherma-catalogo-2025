@@ -34,7 +34,7 @@ function AppProviders({ children }) {
 
 function App() {
   return (
-    <div className="App min-h-screen bg-gray-50">
+    <div className="App">
       <BrowserRouter>
         <AppProviders>
           <div className="flex flex-col min-h-screen">
