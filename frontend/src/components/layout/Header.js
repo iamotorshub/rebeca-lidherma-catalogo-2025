@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Heart, ShoppingCart, Menu, X, MessageCircle, User } from 'lucide-react';
+import { Search, Heart, ShoppingCart, Menu, X, MessageCircle, User, Sparkles } from 'lucide-react';
 import { useCart } from '../../contexts/CartContext';
 import { useProducts } from '../../contexts/ProductContext';
 import { useUser } from '../../contexts/UserContext';
@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   const navigation = [
-    { name: 'Inicio', href: '/', icon: 'home' },
+    { name: 'Inicio', href: '/' },
     { name: 'Cuidado de la Piel', href: '/cuidado-piel' },
     { name: 'Maquillaje', href: '/maquillaje' },
     { name: 'Solares', href: '/solares' },
@@ -42,14 +42,17 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
-      {/* Top Bar */}
-      <div className="py-2 text-sm bg-[#2d5aa0] text-white text-center">
+    <header className="sticky top-0 z-50 bg-white shadow-lg border-b border-pink-100">
+      {/* Top Bar Pastel */}
+      <div className="py-2 text-sm gradient-pink text-gray-700 text-center">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center space-x-6 text-xs md:text-sm">
-            <span>🚚 Envíos a todo el país</span>
-            <span>📱 Consultas por WhatsApp</span>
-            <span>💳 Precios profesionales disponibles</span>
+          <div className="flex items-center justify-center space-x-6 text-xs md:text-sm font-lato">
+            <span className="flex items-center">
+              <Sparkles className="w-3 h-3 mr-1" />
+              10% OFF por transferencia
+            </span>
+            <span>🚚 Envío gratis desde $70.000</span>
+            <span>💆‍♀️ Consultas gratis con Rebeca</span>
           </div>
         </div>
       </div>
