@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Eye, ShoppingCart, MessageCircle } from 'lucide-react';
+import { Heart, Eye, ShoppingCart, MessageCircle, Sparkles } from 'lucide-react';
 import { useCart } from '../../contexts/CartContext';
 import { useUser } from '../../contexts/UserContext';
 import { Button } from '../ui/button';
@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
     e.preventDefault();
     addItem(product);
     toast({
-      title: "Producto agregado al carrito",
+      title: "¡Agregado al carrito! 💕",
       description: `${product.producto} se agregó correctamente`,
     });
   };
@@ -29,29 +29,30 @@ const ProductCard = ({ product }) => {
     e.preventDefault();
     toggleFavorite(product.id);
     toast({
-      title: isFavorite ? "Eliminado de favoritos" : "Agregado a favoritos",
+      title: isFavorite ? "Eliminado de favoritos 💔" : "¡Agregado a favoritos! 💖",
       description: `${product.producto} ${isFavorite ? 'se eliminó de' : 'se agregó a'} tus favoritos`,
     });
   };
 
   const handleWhatsAppInquiry = (e) => {
     e.preventDefault();
-    const message = encodeURIComponent(`Hola! Estoy interesado/a en: ${product.producto} - ${product.linea} (${product.presentacion}). ¿Podrían darme más información?`);
+    const message = encodeURIComponent(`¡Hola Rebeca! Me interesa este producto: ${product.producto} - ${product.linea} (${product.presentacion}). ¿Podrías darme más información? 💆‍♀️✨`);
     const whatsappUrl = `https://wa.me/5491140000000?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group">
+    <div className="beauty-card overflow-hidden group hover-lift">
       {/* Image Container */}
       <Link to={`/producto/${product.slug}`} className="block">
-        <div className="relative aspect-square overflow-hidden bg-gray-100">
+        <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-pink-50 to-rose-50">
           <img 
             src={product.imagen_url} 
             alt={product.producto}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/300x300/f3f4f6/9ca3af?text=Lidherma';
+              // Placeholder más bonito y femenino
+              e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRkFEQUREIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMDAiIHI9IjMwIiBmaWxsPSIjRjRDMkMyIi8+CjxyZWN0IHg9IjEyMCIgeT0iMTQwIiB3aWR0aD0iNjAiIGhlaWdodD0iODAiIHJ4PSIxMCIgZmlsbD0iI0Y0QzJDMiIvPgo8dGV4dCB4PSIxNTAiIHk9IjI2MCIgZm9udC1mYW1pbHk9IlBsYXlmYWlyIERpc3BsYXkiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiIGZpbGw9IiM5Q0EzQUYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxpZGhlcm1hPC90ZXh0Pgo8L3N2Zz4K';
             }}
           />
           
@@ -59,15 +60,17 @@ const ProductCard = ({ product }) => {
           <div className="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <button 
               onClick={handleToggleFavorite}
-              className={`w-8 h-8 rounded-full shadow-md flex items-center justify-center transition-colors ${
-                isFavorite ? 'bg-[#e63946] text-white' : 'bg-white text-gray-600 hover:text-[#e63946]'
+              className={`w-10 h-10 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 ${
+                isFavorite 
+                  ? 'bg-gradient-to-r from-pink-400 to-rose-400 text-white scale-110' 
+                  : 'bg-white text-gray-600 hover:text-pink-500 hover:bg-pink-50'
               }`}
             >
               <Heart className={`h-4 w-4 ${isFavorite ? 'fill-current' : ''}`} />
             </button>
             <Link 
               to={`/producto/${product.slug}`}
-              className="w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-[#2d5aa0]"
+              className="w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-purple-500 hover:bg-purple-50 transition-all duration-300"
             >
               <Eye className="h-4 w-4" />
             </Link>
@@ -75,15 +78,23 @@ const ProductCard = ({ product }) => {
           
           {/* Stock Status */}
           <div className="absolute top-3 left-3">
-            <Badge className={`text-xs ${product.disponible ? 'bg-[#28a745]' : 'bg-gray-400'}`}>
-              {product.disponible ? 'Disponible' : 'Consultar'}
+            <Badge className={`text-xs border-none font-lato ${
+              product.disponible 
+                ? 'bg-gradient-to-r from-green-200 to-emerald-200 text-green-800' 
+                : 'bg-gradient-to-r from-gray-200 to-gray-300 text-gray-700'
+            }`}>
+              {product.disponible ? (
+                <><Sparkles className="w-3 h-3 mr-1" />Disponible</>
+              ) : (
+                'Consultar'
+              )}
             </Badge>
           </div>
 
           {/* Discount Badge */}
           {hasDiscount && (
             <div className="absolute bottom-3 left-3">
-              <Badge className="bg-[#ffc107] text-gray-900 text-xs">
+              <Badge className="bg-gradient-to-r from-yellow-200 to-amber-200 text-yellow-800 text-xs border-none font-lato font-semibold">
                 {Math.round((1 - priceToShow / product.precio_publico_ARS) * 100)}% OFF
               </Badge>
             </div>
@@ -92,48 +103,50 @@ const ProductCard = ({ product }) => {
       </Link>
       
       {/* Product Info */}
-      <div className="p-4">
+      <div className="p-5">
         {/* Brand/Line */}
-        <div className="flex items-center justify-between mb-2">
-          <Badge variant="secondary" className="text-xs bg-gray-100 text-gray-600">
+        <div className="flex items-center justify-between mb-3">
+          <Badge className="text-xs bg-gradient-to-r from-purple-100 to-lavender-100 text-purple-700 border-none font-lato">
             {product.linea}
           </Badge>
-          <span className="text-xs text-gray-500">{product.presentacion}</span>
+          <span className="text-xs text-gray-500 font-lato">{product.presentacion}</span>
         </div>
         
         {/* Product Name */}
         <Link to={`/producto/${product.slug}`}>
-          <h3 className="font-semibold text-gray-900 mb-2 text-sm leading-tight line-clamp-2 hover:text-[#2d5aa0] transition-colors">
+          <h3 className="font-playfair font-semibold text-gray-800 mb-2 text-sm leading-tight line-clamp-2 hover:text-pink-600 transition-colors">
             {product.producto}
           </h3>
         </Link>
         
         {/* Category */}
-        <p className="text-xs text-gray-500 mb-3">{product.categoria_L2}</p>
+        <p className="text-xs text-gray-500 mb-4 font-lato">{product.categoria_L2}</p>
         
         {/* Pricing */}
         <div className="mb-4">
           {hasDiscount ? (
-            <div className="flex items-center justify-between">
-              <div>
-                <span className="text-lg font-bold text-[#2d5aa0]">
-                  ${priceToShow.toLocaleString()}
-                </span>
-                <span className="text-xs text-gray-500 ml-1">prof.</span>
-              </div>
-              <div className="text-right">
-                <span className="text-sm text-gray-400 line-through">
-                  ${product.precio_publico_ARS.toLocaleString()}
-                </span>
-                <span className="text-xs text-gray-500 block">público</span>
+            <div className="space-y-1">
+              <div className="flex items-center justify-between">
+                <div>
+                  <span className="text-lg font-bold text-pink-600 font-playfair">
+                    ${priceToShow.toLocaleString()}
+                  </span>
+                  <span className="text-xs text-pink-500 ml-1 font-lato">prof.</span>
+                </div>
+                <div className="text-right">
+                  <span className="text-sm text-gray-400 line-through font-lato">
+                    ${product.precio_publico_ARS.toLocaleString()}
+                  </span>
+                  <span className="text-xs text-gray-400 block font-lato">público</span>
+                </div>
               </div>
             </div>
           ) : (
             <div>
-              <span className="text-lg font-bold text-[#2d5aa0]">
+              <span className="text-lg font-bold text-pink-600 font-playfair">
                 ${priceToShow.toLocaleString()}
               </span>
-              <span className="text-xs text-gray-500 ml-1">
+              <span className="text-xs text-gray-500 ml-1 font-lato">
                 {isProfessional ? 'prof.' : 'consultar'}
               </span>
             </div>
@@ -144,7 +157,7 @@ const ProductCard = ({ product }) => {
         <div className="flex space-x-2">
           <Button 
             onClick={handleAddToCart}
-            className="flex-1 bg-[#2d5aa0] text-white hover:bg-[#1a4480] text-sm py-2"
+            className="flex-1 btn-pastel text-sm py-2 font-lato font-medium hover:shadow-lg"
             disabled={!product.disponible}
           >
             <ShoppingCart className="h-4 w-4 mr-2" />
@@ -152,8 +165,7 @@ const ProductCard = ({ product }) => {
           </Button>
           <Button 
             onClick={handleWhatsAppInquiry}
-            variant="outline"
-            className="border-gray-300 text-gray-600 hover:bg-gray-100 text-sm py-2 px-3"
+            className="btn-lavender text-sm py-2 px-3 hover:shadow-lg"
           >
             <MessageCircle className="h-4 w-4" />
           </Button>
