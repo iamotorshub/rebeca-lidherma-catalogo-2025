@@ -192,38 +192,41 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-12">
+      {/* Featured Products - Lo Más Vendido */}
+      <section className="section-padding gradient-lavender">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Productos Destacados
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
+              Lo Más Vendido
             </h2>
+            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto mb-6">
+              Los productos favoritos de nuestras clientas
+            </p>
             <Link to="/productos">
-              <Button variant="outline" className="border-[#2d5aa0] text-[#2d5aa0] hover:bg-[#2d5aa0] hover:text-white">
-                Ver Todos
+              <Button className="btn-pastel font-lato">
+                Ver Todo el Catálogo
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
           
           {loading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {[...Array(8)].map((_, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-gray-200"></div>
+                <div key={index} className="beauty-card overflow-hidden animate-pulse">
+                  <div className="aspect-square bg-pink-100"></div>
                   <div className="p-4">
-                    <div className="h-4 bg-gray-200 rounded mb-2"></div>
-                    <div className="h-3 bg-gray-200 rounded w-3/4 mb-2"></div>
-                    <div className="h-6 bg-gray-200 rounded w-1/2 mb-4"></div>
-                    <div className="h-8 bg-gray-200 rounded"></div>
+                    <div className="h-4 bg-pink-200 rounded mb-2"></div>
+                    <div className="h-3 bg-pink-200 rounded w-3/4 mb-2"></div>
+                    <div className="h-6 bg-pink-200 rounded w-1/2 mb-4"></div>
+                    <div className="h-8 bg-pink-200 rounded"></div>
                   </div>
                 </div>
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {featuredProducts.map((product) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {featuredProducts.slice(0, 6).map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
@@ -231,22 +234,78 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-12 bg-gray-50">
+      {/* Consulta Gratis Section */}
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
-            ¿Por qué elegir Rebeca Beauty Store?
-          </h2>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="beauty-card p-12 gradient-pink">
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Heart className="w-10 h-10 text-pink-500" />
+                </div>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-6">
+                Consultá Gratis con Rebeca
+              </h2>
+              <p className="text-lg text-gray-600 font-lato mb-8 max-w-2xl mx-auto">
+                Recibí asesoramiento personalizado para elegir los productos ideales para tu tipo de piel. 
+                Más de 10 años de experiencia en cosmética profesional.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <Button 
+                  size="lg"
+                  className="btn-lavender font-lato px-10 py-4 text-lg"
+                  onClick={() => {
+                    const message = encodeURIComponent("¡Hola Rebeca! Me gustaría una consulta gratuita sobre qué productos Lidherma son ideales para mi tipo de piel 💆‍♀️✨");
+                    window.open(`https://wa.me/5491140000000?text=${message}`, '_blank');
+                  }}
+                >
+                  <Heart className="mr-2 h-5 w-5" />
+                  Consulta Gratuita
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-gray-400 text-gray-700 hover:bg-gray-100 font-lato px-10 py-4 text-lg"
+                  onClick={() => {
+                    const message = encodeURIComponent("Hola! Me gustaría conocer más sobre los precios profesionales de Lidherma");
+                    window.open(`https://wa.me/5491140000000?text=${message}`, '_blank');
+                  }}
+                >
+                  Precios Profesionales
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section Rediseñada */}
+      <section className="section-padding gradient-lavender">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
+              ¿Por qué elegir Rebeca Beauty Store?
+            </h2>
+            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto">
+              Tu tienda de confianza para productos LIDHERMA originales
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-[#2d5aa0] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="h-8 w-8 text-white" />
+                <div key={index} className="beauty-card text-center p-6 hover-lift group">
+                  <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
+                    <Icon className="h-8 w-8 text-gray-600" />
                   </div>
-                  <h3 className="font-bold text-lg mb-2 text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <h3 className="font-playfair font-bold text-lg mb-3 text-gray-700 group-hover:text-pink-600 transition-colors">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 font-lato text-sm leading-relaxed">
+                    {feature.description}
+                  </p>
                 </div>
               );
             })}
@@ -254,36 +313,54 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Brands Carousel */}
-      <section className="py-12">
+      {/* Líneas Lidherma Carousel */}
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">
-            Líneas Lidherma Disponibles
-          </h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
+              Líneas Lidherma Disponibles
+            </h2>
+            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto">
+              Cada línea con tecnología específica para diferentes necesidades de la piel
+            </p>
+          </div>
+          
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {lineas.slice(0, 12).map((linea, index) => (
-              <Link 
-                key={index}
-                to={`/linea/${linea.toLowerCase().replace(/\s+/g, '-')}`}
-                className="group"
-              >
-                <div className="bg-white rounded-lg p-4 border border-gray-200 hover:border-[#2d5aa0] hover:shadow-md transition-all duration-300 text-center">
-                  <div className="h-12 flex items-center justify-center mb-2">
-                    <span className="text-2xl font-bold text-[#2d5aa0] group-hover:scale-110 transition-transform">
-                      L
-                    </span>
+            {lineas.slice(0, 12).map((linea, index) => {
+              const colors = [
+                'from-pink-100 to-rose-100',
+                'from-purple-100 to-lavender-100', 
+                'from-yellow-100 to-amber-100',
+                'from-blue-100 to-cyan-100',
+                'from-green-100 to-emerald-100',
+                'from-orange-100 to-red-100'
+              ];
+              const color = colors[index % colors.length];
+              
+              return (
+                <Link 
+                  key={index}
+                  to={`/linea/${linea.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="group hover-lift"
+                >
+                  <div className="beauty-card text-center p-4 h-full group-hover:shadow-xl">
+                    <div className={`h-16 flex items-center justify-center mb-3 rounded-full bg-gradient-to-br ${color}`}>
+                      <span className="text-2xl font-playfair font-bold text-gray-600 group-hover:scale-110 transition-transform">
+                        L
+                      </span>
+                    </div>
+                    <h3 className="font-lato font-medium text-xs text-gray-700 group-hover:text-pink-600 transition-colors leading-tight">
+                      {linea}
+                    </h3>
                   </div>
-                  <h3 className="font-medium text-sm text-gray-900 group-hover:text-[#2d5aa0] transition-colors">
-                    {linea}
-                  </h3>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
           
           <div className="text-center mt-8">
             <Link to="/productos">
-              <Button className="bg-[#2d5aa0] text-white hover:bg-[#1a4480]">
+              <Button className="btn-pastel font-lato">
                 Ver Todas las Líneas
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
@@ -292,30 +369,38 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-[#2d5aa0] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            ¿Sos profesional de la estética?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Accedé a precios especiales y condiciones exclusivas
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link to="/profesionales">
-              <Button size="lg" className="bg-white text-[#2d5aa0] hover:bg-gray-100 font-bold px-8 py-3">
-                Registrarme como Profesional
-              </Button>
-            </Link>
-            <Link to="/contacto">
+      {/* CTA Final Section */}
+      <section className="section-padding gradient-pink">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <Crown className="w-16 h-16 mx-auto text-pink-500 mb-4" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-6">
+              ¿Sos profesional de la estética?
+            </h2>
+            <p className="text-lg text-gray-600 font-lato mb-8 max-w-2xl mx-auto">
+              Accedé a precios especiales, condiciones exclusivas y asesoramiento técnico personalizado
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <Link to="/profesionales">
+                <Button size="lg" className="btn-lavender font-lato px-10 py-4 text-lg">
+                  <Crown className="mr-2 h-5 w-5" />
+                  Registrarme como Profesional
+                </Button>
+              </Link>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-[#2d5aa0] font-bold px-8 py-3"
+                variant="outline"
+                className="border-2 border-gray-400 text-gray-700 hover:bg-gray-100 font-lato px-10 py-4 text-lg"
+                onClick={() => {
+                  const message = encodeURIComponent("Hola! Soy profesional de la estética y me gustaría información sobre precios y condiciones especiales");
+                  window.open(`https://wa.me/5491140000000?text=${message}`, '_blank');
+                }}
               >
                 Consultar por WhatsApp
               </Button>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
