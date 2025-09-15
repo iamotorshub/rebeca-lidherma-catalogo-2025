@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, MessageCircle, Instagram, Facebook, Heart, Sparkles, Crown } from 'lucide-react';
-import { whatsappConfig } from '../../data/mockProducts';
+import { MapPin, Phone, Mail, MessageCircle, Instagram, Heart, Sparkles, Crown } from 'lucide-react';
+import { storeConfig } from '../../data/mockProducts';
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent(whatsappConfig.defaultMessage);
-    const whatsappUrl = `https://wa.me/${whatsappConfig.phoneNumber}?text=${message}`;
+    const message = encodeURIComponent("¡Hola Rebeca! Me gustaría información sobre productos Lidherma 💆‍♀️✨");
+    const whatsappUrl = `https://wa.me/${storeConfig.contacto.whatsapp}?text=${message}`;
     window.open(whatsappUrl, '_blank');
+  };
+
+  const handleInstagramClick = () => {
+    window.open(`https://instagram.com/${storeConfig.contacto.instagram.replace('@', '')}`, '_blank');
   };
 
   return (
@@ -21,7 +25,7 @@ const Footer = () => {
               Suscribite y Obtené 10% OFF
             </h3>
             <p className="text-lg text-gray-600 font-lato mb-8 opacity-90">
-              En tu primera compra + consejos exclusivos de belleza
+              En tu primera compra + consejos exclusivos de belleza con Rebeca
             </p>
             <div className="max-w-md mx-auto flex rounded-full overflow-hidden shadow-lg">
               <input 
@@ -29,7 +33,13 @@ const Footer = () => {
                 placeholder="Tu email"
                 className="flex-1 px-6 py-4 text-gray-700 focus:outline-none font-lato bg-white"
               />
-              <button className="btn-pastel px-8 py-4 font-lato font-medium rounded-r-full rounded-l-none">
+              <button 
+                className="btn-pastel px-8 py-4 font-lato font-medium rounded-r-full rounded-l-none"
+                onClick={() => {
+                  const message = encodeURIComponent("¡Hola Rebeca! Me gustaría suscribirme para recibir ofertas y consejos de belleza 💄✨");
+                  window.open(`https://wa.me/${storeConfig.contacto.whatsapp}?text=${message}`, '_blank');
+                }}
+              >
                 Suscribirse
               </button>
             </div>
@@ -53,23 +63,25 @@ const Footer = () => {
                 }}
               />
               <div>
-                <h3 className="text-xl font-playfair font-bold text-gray-700">Rebeca Beauty Store</h3>
-                <p className="text-sm text-gray-500 font-lato">Distribuidor Oficial Lidherma</p>
+                <h3 className="text-xl font-playfair font-bold text-gray-700">
+                  {storeConfig.name}
+                </h3>
+                <p className="text-sm text-gray-500 font-lato">{storeConfig.slogan}</p>
               </div>
             </div>
             <p className="text-gray-600 text-sm mb-6 font-lato leading-relaxed">
-              Más de 10 años especializados en productos de belleza profesional LIDHERMA. 
-              Precios mayoristas y atención personalizada para profesionales y público en general.
+              <strong>Rebeca</strong> es cosmetóloga matriculada (<strong>M.P. {storeConfig.cosmetologa.matricula}</strong>) 
+              con más de 10 años de experiencia. Distribuidor oficial exclusivo de LIDHERMA en {storeConfig.ubicacion}.
             </p>
             
             {/* Social Links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gradient-to-r from-pink-200 to-rose-200 rounded-full flex items-center justify-center text-pink-600 hover:shadow-lg transition-all hover-lift">
+              <button 
+                onClick={handleInstagramClick}
+                className="w-10 h-10 bg-gradient-to-r from-pink-200 to-rose-200 rounded-full flex items-center justify-center text-pink-600 hover:shadow-lg transition-all hover-lift"
+              >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gradient-to-r from-purple-200 to-lavender-200 rounded-full flex items-center justify-center text-purple-600 hover:shadow-lg transition-all hover-lift">
-                <Facebook className="h-5 w-5" />
-              </a>
+              </button>
               <button 
                 onClick={handleWhatsAppClick}
                 className="w-10 h-10 bg-gradient-to-r from-green-200 to-emerald-200 rounded-full flex items-center justify-center text-green-600 hover:shadow-lg transition-all hover-lift"
@@ -93,7 +105,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/productos" className="text-gray-600 hover:text-pink-600 transition-colors hover:pl-2">
-                  Todos los Productos
+                  Catálogo Completo (190+ productos)
                 </Link>
               </li>
               <li>
@@ -119,7 +131,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Categories */}
+          {/* Líneas Destacadas */}
           <div>
             <h4 className="text-lg font-playfair font-semibold mb-6 text-gray-700 flex items-center">
               <Sparkles className="w-4 h-4 mr-2 text-purple-500" />
@@ -132,8 +144,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/linea/renovage" className="text-gray-600 hover:text-purple-600 transition-colors hover:pl-2">
+                  Renovage Anti-Age
+                </Link>
+              </li>
+              <li>
                 <Link to="/linea/mimika" className="text-gray-600 hover:text-purple-600 transition-colors hover:pl-2">
-                  Mímika
+                  Mímika Maquillaje
                 </Link>
               </li>
               <li>
@@ -151,15 +168,10 @@ const Footer = () => {
                   Niacinamide+
                 </Link>
               </li>
-              <li>
-                <Link to="/linea/aqua-shot" className="text-gray-600 hover:text-purple-600 transition-colors hover:pl-2">
-                  Aqua Shot
-                </Link>
-              </li>
             </ul>
           </div>
           
-          {/* Contact Info */}
+          {/* Contacto Específico de Rebeca */}
           <div>
             <h4 className="text-lg font-playfair font-semibold mb-6 text-gray-700 flex items-center">
               <Crown className="w-4 h-4 mr-2 text-yellow-500" />
@@ -170,15 +182,15 @@ const Footer = () => {
                 <MapPin className="h-4 w-4 text-pink-500 mt-0.5" />
                 <div>
                   <p className="font-medium text-gray-700">Ubicación</p>
-                  <p className="text-gray-600">Buenos Aires, Argentina</p>
+                  <p className="text-gray-600">{storeConfig.ubicacion}</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3 p-3 bg-white rounded-lg shadow-sm hover-lift">
                 <Phone className="h-4 w-4 text-purple-500 mt-0.5" />
                 <div>
-                  <p className="font-medium text-gray-700">Teléfono</p>
-                  <p className="text-gray-600">+54 11 4000-0000</p>
+                  <p className="font-medium text-gray-700">WhatsApp</p>
+                  <p className="text-gray-600">{storeConfig.contacto.telefono}</p>
                 </div>
               </div>
               
@@ -186,7 +198,15 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-yellow-500 mt-0.5" />
                 <div>
                   <p className="font-medium text-gray-700">Email</p>
-                  <p className="text-gray-600">info@rebecabeautystore.com</p>
+                  <p className="text-gray-600">{storeConfig.contacto.email}</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3 p-3 bg-white rounded-lg shadow-sm hover-lift">
+                <Instagram className="h-4 w-4 text-pink-500 mt-0.5" />
+                <div>
+                  <p className="font-medium text-gray-700">Instagram</p>
+                  <p className="text-gray-600">{storeConfig.contacto.instagram}</p>
                 </div>
               </div>
               
@@ -196,8 +216,8 @@ const Footer = () => {
               >
                 <MessageCircle className="h-4 w-4 text-green-600 mt-0.5" />
                 <div className="text-left">
-                  <p className="font-medium text-green-700">WhatsApp</p>
-                  <p className="text-green-600 text-xs">Consultas gratis con Rebeca</p>
+                  <p className="font-medium text-green-700">Consultas Gratuitas</p>
+                  <p className="text-green-600 text-xs">Chat directo con Rebeca M.P. {storeConfig.cosmetologa.matricula}</p>
                 </div>
               </button>
             </div>
@@ -209,10 +229,12 @@ const Footer = () => {
                 Horarios de Atención
               </h5>
               <div className="text-xs text-gray-600 space-y-1 font-lato">
-                <p>Lunes a Viernes: 9:00 - 18:00</p>
-                <p>Sábados: 9:00 - 13:00</p>
-                <p>Domingos: Cerrado</p>
-                <p className="text-pink-600 font-medium mt-2">WhatsApp: 24/7 disponible</p>
+                <p>Lunes a Viernes: {storeConfig.horarios.lunes_viernes}</p>
+                <p>Sábados: {storeConfig.horarios.sabados}</p>
+                <p>Domingos: {storeConfig.horarios.domingos}</p>
+                <p className="text-pink-600 font-medium mt-2">
+                  {storeConfig.horarios.whatsapp_247 ? 'WhatsApp: 24/7 disponible' : 'WhatsApp en horarios comerciales'}
+                </p>
               </div>
             </div>
           </div>
@@ -225,15 +247,21 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="flex items-center justify-center space-x-2">
               <Sparkles className="w-5 h-5 text-pink-500" />
-              <span className="font-lato font-medium text-gray-700">10% OFF por transferencia</span>
+              <span className="font-lato font-medium text-gray-700">
+                10% OFF por transferencia
+              </span>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <Heart className="w-5 h-5 text-purple-500" />
-              <span className="font-lato font-medium text-gray-700">Envío gratis desde $70.000</span>
+              <span className="font-lato font-medium text-gray-700">
+                Envío gratis desde ${storeConfig.servicios.descuento_transferencia ? '70.000' : '60.000'}
+              </span>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <Crown className="w-5 h-5 text-yellow-500" />
-              <span className="font-lato font-medium text-gray-700">Precios profesionales</span>
+              <span className="font-lato font-medium text-gray-700">
+                Cosmetóloga M.P. {storeConfig.cosmetologa.matricula}
+              </span>
             </div>
           </div>
         </div>
@@ -244,8 +272,13 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 font-lato">
             <div className="mb-4 md:mb-0 text-center md:text-left">
-              <p>&copy; 2025 Rebeca Beauty Store. Todos los derechos reservados.</p>
-              <p className="text-xs mt-1">Distribuidor autorizado de productos LIDHERMA Argentina</p>
+              <p>&copy; 2025 {storeConfig.name}. Todos los derechos reservados.</p>
+              <p className="text-xs mt-1">
+                {storeConfig.slogan} • {storeConfig.ubicacion}
+              </p>
+              <p className="text-xs text-pink-600 font-medium mt-1">
+                Dermocosmética profesional con entrega el mismo día • Más de 190 productos oficiales
+              </p>
             </div>
             <div className="flex space-x-6 text-xs">
               <Link to="/terminos" className="hover:text-pink-600 transition-colors">
