@@ -178,214 +178,218 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Featured Products - Lo Más Vendido */}
-      <section className="section-padding gradient-lavender">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
-              Lo Más Vendido
-            </h2>
-            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto mb-6">
-              Los productos favoritos de nuestras clientas
-            </p>
-            <Link to="/productos">
-              <Button className="btn-pastel font-lato">
-                Ver Todo el Catálogo
-                <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-          
-          {loading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {[...Array(8)].map((_, index) => (
-                <div key={index} className="beauty-card overflow-hidden animate-pulse">
-                  <div className="aspect-square bg-pink-100"></div>
-                  <div className="p-4">
-                    <div className="h-4 bg-pink-200 rounded mb-2"></div>
-                    <div className="h-3 bg-pink-200 rounded w-3/4 mb-2"></div>
-                    <div className="h-6 bg-pink-200 rounded w-1/2 mb-4"></div>
-                    <div className="h-8 bg-pink-200 rounded"></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {featuredProducts.slice(0, 6).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Consulta Gratis Section */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4">
+      {/* Envío con Uber - Bahía Blanca */}
+      <section className="section-padding bg-black text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black opacity-90"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="beauty-card p-12 gradient-pink">
-              <div className="mb-6">
-                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <Heart className="w-10 h-10 text-pink-500" />
+            <div className="mb-8">
+              <div className="inline-flex items-center space-x-3 mb-6">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                  <Truck className="w-8 h-8 text-black" />
                 </div>
+                <h2 className="text-3xl md:text-4xl font-playfair font-bold">
+                  Envío con Uber
+                </h2>
               </div>
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-6">
-                Consultá Gratis con Rebeca
-              </h2>
-              <p className="text-lg text-gray-600 font-lato mb-8 max-w-2xl mx-auto">
-                Recibí asesoramiento personalizado para elegir los productos ideales para tu tipo de piel. 
-                Más de 10 años de experiencia en cosmética profesional.
+              <p className="text-xl font-lato mb-2">
+                Solo en Bahía Blanca - El mismo día
               </p>
-              <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <Button 
-                  size="lg"
-                  className="btn-lavender font-lato px-10 py-4 text-lg"
-                  onClick={() => {
-                    const message = encodeURIComponent("¡Hola Rebeca! Me gustaría una consulta gratuita sobre qué productos Lidherma son ideales para mi tipo de piel 💆‍♀️✨");
-                    window.open(`https://wa.me/5491140000000?text=${message}`, '_blank');
-                  }}
-                >
-                  <Heart className="mr-2 h-5 w-5" />
-                  Consulta Gratuita
-                </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-gray-400 text-gray-700 hover:bg-gray-100 font-lato px-10 py-4 text-lg"
-                  onClick={() => {
-                    const message = encodeURIComponent("Hola! Me gustaría conocer más sobre los precios profesionales de Lidherma");
-                    window.open(`https://wa.me/5491140000000?text=${message}`, '_blank');
-                  }}
-                >
-                  Precios Profesionales
-                </Button>
+              <p className="text-gray-300 font-lato max-w-2xl mx-auto">
+                Hacés tu compra, te llega en 1-3 horas con seguimiento en tiempo real desde la app de Uber
+              </p>
+            </div>
+
+            {/* Pasos del envío */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle2 className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="font-playfair font-semibold mb-2">Pedido Confirmado</h4>
+                <p className="text-sm text-gray-300 font-lato">Recibimos tu compra</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Package className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="font-playfair font-semibold mb-2">En Preparación</h4>
+                <p className="text-sm text-gray-300 font-lato">Armamos tu pedido</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Zap className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="font-playfair font-semibold mb-2">Uber en Camino</h4>
+                <p className="text-sm text-gray-300 font-lato">Seguí en tiempo real</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Gift className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="font-playfair font-semibold mb-2">Entregado</h4>
+                <p className="text-sm text-gray-300 font-lato">En tu domicilio</p>
               </div>
             </div>
+
+            <Button 
+              size="lg"
+              className="bg-white text-black hover:bg-gray-100 font-lato px-8 py-4 text-lg"
+              onClick={() => {
+                const message = encodeURIComponent("¡Hola Rebeca! Me interesa el envío con Uber en Bahía Blanca. ¿Cómo funciona? 🚚");
+                window.open(`https://wa.me/${storeConfig.contacto.whatsapp}?text=${message}`, '_blank');
+              }}
+            >
+              <Package className="mr-2 h-5 w-5" />
+              Comprá Ahora con Envío Uber
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Features Section Rediseñada */}
-      <section className="section-padding gradient-lavender">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
-              ¿Por qué elegir Rebeca Beauty Store?
-            </h2>
-            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto">
-              Tu tienda de confianza para productos LIDHERMA originales
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div key={index} className="beauty-card text-center p-6 hover-lift group">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
-                    <Icon className="h-8 w-8 text-gray-600" />
-                  </div>
-                  <h3 className="font-playfair font-bold text-lg mb-3 text-gray-700 group-hover:text-pink-600 transition-colors">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 font-lato text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Líneas Lidherma Carousel */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
-              Líneas Lidherma Disponibles
-            </h2>
-            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto">
-              Cada línea con tecnología específica para diferentes necesidades de la piel
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {lineas.slice(0, 12).map((linea, index) => {
-              const colors = [
-                'from-pink-100 to-rose-100',
-                'from-purple-100 to-lavender-100', 
-                'from-yellow-100 to-amber-100',
-                'from-blue-100 to-cyan-100',
-                'from-green-100 to-emerald-100',
-                'from-orange-100 to-red-100'
-              ];
-              const color = colors[index % colors.length];
-              
-              return (
-                <Link 
-                  key={index}
-                  to={`/linea/${linea.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="group hover-lift"
-                >
-                  <div className="beauty-card text-center p-4 h-full group-hover:shadow-xl">
-                    <div className={`h-16 flex items-center justify-center mb-3 rounded-full bg-gradient-to-br ${color}`}>
-                      <span className="text-2xl font-playfair font-bold text-gray-600 group-hover:scale-110 transition-transform">
-                        L
-                      </span>
-                    </div>
-                    <h3 className="font-lato font-medium text-xs text-gray-700 group-hover:text-pink-600 transition-colors leading-tight">
-                      {linea}
-                    </h3>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-          
-          <div className="text-center mt-8">
-            <Link to="/productos">
-              <Button className="btn-pastel font-lato">
-                Ver Todas las Líneas
-                <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Final Section */}
+      {/* Consulta con Rebeca */}
       <section className="section-padding gradient-pink">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-6">
-              <Crown className="w-16 h-16 mx-auto text-pink-500 mb-4" />
+          <div className="max-w-4xl mx-auto">
+            <div className="beauty-card p-12 bg-white">
+              <div className="text-center mb-8">
+                <div className="w-20 h-20 bg-gradient-to-br from-pink-200 to-rose-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-10 h-10 text-pink-600" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
+                  Consultá con Rebeca
+                </h2>
+                <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto">
+                  <strong>Rebeca es cosmetóloga profesional (M.P. 1624)</strong>, especializada en tratamientos Lidherma. 
+                  Agendá una consulta personalizada online, presencial o a domicilio.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl">
+                  <Calendar className="w-8 h-8 mx-auto text-blue-600 mb-3" />
+                  <h4 className="font-playfair font-semibold text-gray-700 mb-2">Virtual</h4>
+                  <p className="text-sm text-gray-600 font-lato">Video consulta online</p>
+                </div>
+                
+                <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl">
+                  <MapPin className="w-8 h-8 mx-auto text-purple-600 mb-3" />
+                  <h4 className="font-playfair font-semibold text-gray-700 mb-2">Presencial</h4>
+                  <p className="text-sm text-gray-600 font-lato">En nuestro local</p>
+                </div>
+                
+                <div className="text-center p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl">
+                  <Clock className="w-8 h-8 mx-auto text-green-600 mb-3" />
+                  <h4 className="font-playfair font-semibold text-gray-700 mb-2">A Domicilio</h4>
+                  <p className="text-sm text-gray-600 font-lato">En tu hogar</p>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Button 
+                  size="lg"
+                  className="btn-lavender font-lato px-10 py-4 text-lg mr-4"
+                  onClick={() => {
+                    const message = encodeURIComponent("¡Hola Rebeca! Me gustaría agendar una consulta personalizada. ¿Qué opciones tenés disponibles? 💆‍♀️✨");
+                    window.open(`https://wa.me/${storeConfig.contacto.whatsapp}?text=${message}`, '_blank');
+                  }}
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Chatear con Rebeca
+                </Button>
+              </div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-6">
-              ¿Sos profesional de la estética?
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <FAQAccordion />
+
+      {/* Medios de Pago */}
+      <section className="section-padding gradient-lavender">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-8">
+              Medios de Pago
             </h2>
-            <p className="text-lg text-gray-600 font-lato mb-8 max-w-2xl mx-auto">
-              Accedé a precios especiales, condiciones exclusivas y asesoramiento técnico personalizado
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {mediosPago.map((medio, index) => (
+                <div 
+                  key={index} 
+                  className={`beauty-card p-6 text-center hover-lift ${
+                    medio.destacado ? 'border-2 border-yellow-400 bg-gradient-to-br from-yellow-50 to-amber-50' : ''
+                  }`}
+                >
+                  <div className="text-4xl mb-3">{medio.icon}</div>
+                  <h4 className="font-playfair font-semibold text-gray-700 mb-2">{medio.nombre}</h4>
+                  <p className="text-sm text-gray-600 font-lato">{medio.descripcion}</p>
+                  {medio.destacado && (
+                    <Badge className="mt-2 bg-yellow-400 text-yellow-900 border-none font-lato">
+                      Recomendado
+                    </Badge>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="section-padding gradient-pink">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
+              Distribuidor Oficial Lidherma en Bahía Blanca
+            </h2>
+            <p className="text-xl text-gray-600 font-lato mb-8">
+              Dermocosmética profesional con entrega el mismo día. Más de 190 productos oficiales.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link to="/profesionales">
-                <Button size="lg" className="btn-lavender font-lato px-10 py-4 text-lg">
+            
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <Link to="/productos">
+                <Button size="lg" className="btn-pastel font-lato px-10 py-4 text-lg">
                   <Crown className="mr-2 h-5 w-5" />
-                  Registrarme como Profesional
+                  Ver Catálogo Completo
                 </Button>
               </Link>
+              
               <Button 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-gray-400 text-gray-700 hover:bg-gray-100 font-lato px-10 py-4 text-lg"
+                size="lg"
+                className="btn-lavender font-lato px-10 py-4 text-lg"
                 onClick={() => {
-                  const message = encodeURIComponent("Hola! Soy profesional de la estética y me gustaría información sobre precios y condiciones especiales");
-                  window.open(`https://wa.me/5491140000000?text=${message}`, '_blank');
+                  const message = encodeURIComponent("¡Hola! Me gustaría más información sobre Rebeca Beauty Store y productos Lidherma 💄✨");
+                  window.open(`https://wa.me/${storeConfig.contacto.whatsapp}?text=${message}`, '_blank');
                 }}
               >
-                Consultar por WhatsApp
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Contactar Ahora
               </Button>
+            </div>
+
+            {/* Stats finales */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+              <div className="beauty-card p-6">
+                <div className="text-2xl font-playfair font-bold text-pink-600 mb-1">10+</div>
+                <div className="text-xs text-gray-600 font-lato">Años de experiencia</div>
+              </div>
+              <div className="beauty-card p-6">
+                <div className="text-2xl font-playfair font-bold text-purple-600 mb-1">M.P. 1624</div>
+                <div className="text-xs text-gray-600 font-lato">Matrícula profesional</div>
+              </div>
+              <div className="beauty-card p-6">
+                <div className="text-2xl font-playfair font-bold text-green-600 mb-1">1-3hs</div>
+                <div className="text-xs text-gray-600 font-lato">Entrega Uber</div>
+              </div>
+              <div className="beauty-card p-6">
+                <div className="text-2xl font-playfair font-bold text-yellow-600 mb-1">24/7</div>
+                <div className="text-xs text-gray-600 font-lato">WhatsApp</div>
+              </div>
             </div>
           </div>
         </div>
