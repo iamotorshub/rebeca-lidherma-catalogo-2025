@@ -44,91 +44,137 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Categories Section Rediseñada */}
+      {/* Líneas Destacadas */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
-              Líneas Destacadas
+              Líneas Profesionales Lidherma
             </h2>
             <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto">
-              Cada línea está formulada con activos de última generación para resultados profesionales
+              Dermocosmética profesional para cada tipo de piel y necesidad específica
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Cuidado de la Piel */}
+            {/* Hidratación */}
             <Link to="/cuidado-piel" className="group hover-lift">
               <div className="beauty-card overflow-hidden h-full">
-                <div className="h-48 bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center relative">
-                  <div className="text-6xl group-hover:scale-110 transition-transform">🌸</div>
+                <div className="h-48 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center relative">
+                  <div className="text-6xl group-hover:scale-110 transition-transform">💧</div>
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-white text-pink-600 border-none font-lato">160+ productos</Badge>
+                    <Badge className="bg-white text-blue-600 border-none font-lato">Hyaluronic 4D</Badge>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-playfair font-bold text-xl mb-3 text-gray-700 group-hover:text-pink-600 transition-colors">
-                    Cuidado Facial
+                  <h3 className="font-playfair font-bold text-xl mb-3 text-gray-700 group-hover:text-blue-600 transition-colors">
+                    Hidratación Profunda
                   </h3>
                   <p className="text-gray-600 mb-4 font-lato">
-                    Hyaluronic 4D, Retinol A+, Plasma Infusion y más líneas para tu rutina diaria
+                    Hyaluronic 4D, Aqua Shot, Hydrapore para hidratación intensa y duradera
                   </p>
                   <Button className="btn-pastel w-full font-lato group-hover:shadow-lg">
-                    Explorar Línea
+                    Ver Línea
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
             </Link>
             
-            {/* Maquillaje */}
-            <Link to="/maquillaje" className="group hover-lift">
+            {/* Anti-Age */}
+            <Link to="/cuidado-piel" className="group hover-lift">
               <div className="beauty-card overflow-hidden h-full">
-                <div className="h-48 bg-gradient-to-br from-purple-100 to-lavender-100 flex items-center justify-center relative">
-                  <div className="text-6xl group-hover:scale-110 transition-transform">💄</div>
+                <div className="h-48 bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center relative">
+                  <div className="text-6xl group-hover:scale-110 transition-transform">✨</div>
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-white text-purple-600 border-none font-lato">Mímika</Badge>
+                    <Badge className="bg-white text-purple-600 border-none font-lato">Renovage</Badge>
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="font-playfair font-bold text-xl mb-3 text-gray-700 group-hover:text-purple-600 transition-colors">
-                    Maquillaje Mímika
+                    Tratamiento Anti-Age
                   </h3>
                   <p className="text-gray-600 mb-4 font-lato">
-                    Línea completa que cuida tu piel mientras realza tu belleza natural
+                    Renovage, Retinol A+, Dherma Science para firmeza y juventud
                   </p>
                   <Button className="btn-lavender w-full font-lato group-hover:shadow-lg">
-                    Ver Maquillaje
+                    Ver Línea
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
             </Link>
             
-            {/* Solares */}
-            <Link to="/solares" className="group hover-lift">
+            {/* Purificación */}
+            <Link to="/cuidado-piel" className="group hover-lift">
               <div className="beauty-card overflow-hidden h-full">
-                <div className="h-48 bg-gradient-to-br from-yellow-100 to-amber-100 flex items-center justify-center relative">
-                  <div className="text-6xl group-hover:scale-110 transition-transform">☀️</div>
+                <div className="h-48 bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center relative">
+                  <div className="text-6xl group-hover:scale-110 transition-transform">🌿</div>
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-white text-yellow-600 border-none font-lato">Dherma Sun</Badge>
+                    <Badge className="bg-white text-green-600 border-none font-lato">Niacinamide+</Badge>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-playfair font-bold text-xl mb-3 text-gray-700 group-hover:text-yellow-600 transition-colors">
-                    Protección Solar
+                  <h3 className="font-playfair font-bold text-xl mb-3 text-gray-700 group-hover:text-green-600 transition-colors">
+                    Purificación & Balance
                   </h3>
                   <p className="text-gray-600 mb-4 font-lato">
-                    Dherma Sun con filtros avanzados y protección contra luz azul
+                    Niacinamide+, Acnex Depure, Detoxify para piel pura y equilibrada
                   </p>
                   <Button className="btn-gold w-full font-lato group-hover:shadow-lg">
-                    Proteger Piel
+                    Ver Línea
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Productos Destacados */}
+      <section className="section-padding gradient-lavender">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-700 mb-4">
+              Productos Más Vendidos
+            </h2>
+            <p className="text-lg text-gray-600 font-lato max-w-2xl mx-auto mb-6">
+              Los favoritos de nuestras clientas en Bahía Blanca
+            </p>
+          </div>
+          
+          {loading ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {[...Array(8)].map((_, index) => (
+                <div key={index} className="beauty-card overflow-hidden animate-pulse">
+                  <div className="aspect-square bg-pink-100"></div>
+                  <div className="p-4 space-y-3">
+                    <div className="h-4 bg-pink-200 rounded"></div>
+                    <div className="h-3 bg-pink-200 rounded w-3/4"></div>
+                    <div className="h-6 bg-pink-200 rounded w-1/2"></div>
+                    <div className="h-8 bg-pink-200 rounded"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+                {featuredProducts.slice(0, 8).map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+              <div className="text-center">
+                <Link to="/productos">
+                  <Button className="btn-pastel font-lato px-8 py-3">
+                    Ver Catálogo Completo (190+ productos)
+                    <ChevronRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+            </>
+          )}
         </div>
       </section>
 
