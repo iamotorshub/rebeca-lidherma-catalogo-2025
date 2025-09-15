@@ -372,31 +372,186 @@ export const mockCategories = [
     id: "cuidado-piel",
     nombre: "Cuidado de la piel", 
     slug: "cuidado-piel",
-    subcategorias: ["Hidratación", "Anti-age", "Purificación", "Limpieza"]
+    subcategorias: ["Hidratación", "Anti-age", "Purificación", "Limpieza", "Luminosidad", "Acné", "Mascarillas"],
+    icon: "🌸",
+    descripcion: "Líneas especializadas para cada tipo de piel y necesidad específica"
   },
   {
     id: "maquillaje", 
     nombre: "Maquillaje",
     slug: "maquillaje",
-    subcategorias: ["Bases", "Correctores", "Labios", "Ojos"]
+    subcategorias: ["Bases", "Correctores", "Labios", "Ojos"],
+    icon: "💄",
+    descripcion: "Mímika: maquillaje que cuida tu piel mientras realza tu belleza"
   },
   {
     id: "solares",
     nombre: "Solares",
     slug: "solares", 
-    subcategorias: ["Protección solar", "After sun", "Bronceadores"]
+    subcategorias: ["Protección solar", "After sun"],
+    icon: "☀️",
+    descripcion: "Dherma Sun: protección inteligente contra UV y luz azul"
+  },
+  {
+    id: "cuidado-corporal",
+    nombre: "Cuidado Corporal",
+    slug: "cuidado-corporal",
+    subcategorias: ["Reductores", "Reafirmantes", "Hidratantes"],
+    icon: "✨",
+    descripcion: "Tratamientos profesionales para el cuerpo"
   }
 ];
 
 export const mockLineas = [
-  "Hyaluronic 4D", "Mímika", "Dherma Sun", "Retinol A+", "Niacinamide+", 
-  "Aqua Shot", "Dherma Science", "Acnex Depure", "Activos Concentrados",
-  "Biosmotic", "CB2 Power", "Cellactive", "Detoxify", "Hydrapore",
-  "Matt Balance", "Plasma Infusion", "Radian C", "Renovage", "Silver Age",
-  "Skinbioma", "Skin Color", "Tense Complex", "Vita B12+", "Vita Shield"
+  // Hidratación y reparación
+  "Hyaluronic 4D", "Aqua Shot", "Hydrapore",
+  
+  // Anti-age premium
+  "Renovage", "Retinol A+", "Dherma Science", "Silver Age", "Tense Complex",
+  
+  // Purificación y balance
+  "Niacinamide+", "Acnex Depure", "Matt Balance", "Detoxify",
+  
+  // Luminosidad y antioxidantes  
+  "Radian C", "Vita B12+", "Vita Shield",
+  
+  // Solares
+  "Dherma Sun",
+  
+  // Maquillaje
+  "Mímika",
+  
+  // Corporal
+  "Cellactive", "Activos Corporales",
+  
+  // Tratamientos específicos
+  "Plasma Infusion", "Biosmotic", "CB2 Power", "Skinbioma", "Expert Mask"
 ];
 
-export const whatsappConfig = {
-  phoneNumber: "5491140000000", // Replace with actual number
-  defaultMessage: "¡Hola! Estoy interesado/a en productos Lidherma desde Rebeca Beauty Store."
+// Configuración específica de Rebeca Beauty Store
+export const storeConfig = {
+  name: "Rebeca Beauty Store",
+  slogan: "Distribuidor Oficial Exclusivo Lidherma",
+  ubicacion: "Bahía Blanca, Buenos Aires",
+  cosmetologa: {
+    nombre: "Rebeca",
+    matricula: "M.P. 1624",
+    especialidad: "Cosmetóloga especializada en tratamientos Lidherma"
+  },
+  contacto: {
+    whatsapp: "5492915660198",
+    email: "rebecabeautystore@gmail.com", 
+    telefono: "291 566 0198",
+    instagram: "@rebecamasajista"
+  },
+  servicios: {
+    envio_uber: true,
+    consultas_online: true,
+    atencion_domicilio: true,
+    descuento_transferencia: 10
+  },
+  horarios: {
+    lunes_viernes: "9:00 - 18:00",
+    sabados: "9:00 - 14:00", 
+    domingos: "Cerrado",
+    whatsapp_247: true
+  }
 };
+
+export const whatsappConfig = {
+  phoneNumber: storeConfig.contacto.whatsapp,
+  defaultMessage: "¡Hola Rebeca! Me gustaría consultar sobre productos Lidherma 💆‍♀️✨"
+};
+
+// Banners del carrusel oficial de Lidherma
+export const heroBanners = [
+  {
+    id: 1,
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/645c6683-1f07-4246-bd8a-47ad6d7f59f6___4093bcb78875469e7d901dbae6ace457.gif",
+    title: "Promociones Lidherma",
+    descripcion: "Descuentos especiales en líneas seleccionadas"
+  },
+  {
+    id: 2, 
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/f059946c-19b4-4c9f-8e52-046f4c829731___04a15065f2cf5eced69aaf8b05abbd08.jpg",
+    title: "Hyaluronic 4D",
+    descripcion: "Hidratación profunda con ácido hialurónico"
+  },
+  {
+    id: 3,
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c2d753ac-ceb0-4189-b92e-2c9333ea306f___f381c9333b1a429af242589d82314d54.jpg", 
+    title: "Renovage Anti-Age",
+    descripcion: "Tecnología avanzada contra el envejecimiento"
+  },
+  {
+    id: 4,
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/ee18a340-e16a-47ac-80bb-a691c461dfaf___51c0cfe06ab12560b32d002143feb914.jpg",
+    title: "Dherma Sun",
+    descripcion: "Protección solar inteligente"
+  },
+  {
+    id: 5,
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/a4ddf1a2-cf36-4226-abf4-e12610bd425e___276e07d8ac054f5d2c537a5115a50ff6.jpg",
+    title: "Mímika",
+    descripcion: "Maquillaje que cuida tu piel"
+  }
+];
+
+// FAQs específicas
+export const faqs = [
+  {
+    id: 1,
+    pregunta: "¿Cómo funciona el envío con Uber?",
+    respuesta: "Hacés tu compra online, confirmamos el pedido y en 1-2 horas un conductor de Uber te lo entrega en tu domicilio dentro de Bahía Blanca. Podés seguir el envío en tiempo real desde la app de Uber."
+  },
+  {
+    id: 2,
+    pregunta: "¿Qué productos tienen 3 cuotas sin interés?", 
+    respuesta: "Todos los productos de más de $25.000 tienen 3 cuotas sin interés con tarjeta de crédito. Los de más de $45.000 tienen hasta 6 cuotas sin interés."
+  },
+  {
+    id: 3,
+    pregunta: "¿Cuál es el tiempo de entrega?",
+    respuesta: "En Bahía Blanca: 1-3 horas con Uber. Resto del país: 24-72hs con OCA/Correo Argentino. Envíos gratis en compras superiores a $70.000."
+  },
+  {
+    id: 4,
+    pregunta: "¿Hacen envíos a todo el país?",
+    respuesta: "Sí, enviamos a toda Argentina. Bahía Blanca tiene envío express con Uber el mismo día. Para otras localidades usamos OCA y Correo Argentino."
+  },
+  {
+    id: 5,
+    pregunta: "¿Los productos son originales?",
+    respuesta: "Somos distribuidor oficial exclusivo de Lidherma. Todos nuestros productos son 100% originales, con garantía de autenticidad y fecha de vencimiento vigente."
+  },
+  {
+    id: 6,
+    pregunta: "¿Puedo cambiar o devolver un producto?",
+    respuesta: "Sí, tenés 30 días para cambios por productos sin usar. En caso de productos defectuosos, te hacemos el cambio inmediato sin costo adicional."
+  }
+];
+
+// Medios de pago
+export const mediosPago = [
+  {
+    nombre: "Mercado Pago",
+    icon: "💳",
+    descripcion: "Todas las tarjetas, hasta 12 cuotas"
+  },
+  {
+    nombre: "Transferencia Bancaria", 
+    icon: "🏦",
+    descripcion: "10% de descuento",
+    destacado: true
+  },
+  {
+    nombre: "Visa / Mastercard",
+    icon: "💎", 
+    descripcion: "3 y 6 cuotas sin interés"
+  },
+  {
+    nombre: "Efectivo",
+    icon: "💵",
+    descripcion: "En sucursal o contra entrega"
+  }
+];
