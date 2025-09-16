@@ -1,4 +1,4 @@
-// Catálogo completo LIDHERMA - 190+ productos reales del CSV
+// Catálogo completo LIDHERMA - 190 productos reales del CSV
 export const mockProducts = [
   // ACNEX DEPURE
   {
