@@ -1996,7 +1996,7 @@ export const mockProducts = [
     tipo: "Banda para cabello",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Comodidad", "Tratamientos", "Profesional"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Lidherma+Headband+Spa",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156560-800-auto?v=638888032942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
