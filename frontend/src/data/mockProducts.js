@@ -2181,27 +2181,21 @@ export const heroBanners = [
   },
   {
     id: 2,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c92d59d2-c6a8-40ee-8872-bf6489465bff___d63409d49ab2b369a56ff1e5fbf1e4d5.jpg",
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/cea9e213-5141-4538-8e8e-efe646a1d5c0___58b17a7f024585d5951cef2f7b30bf91.jpg",
     title: "Promociones Especiales",
     descripcion: "Descuentos y ofertas exclusivas en productos seleccionados"
   },
   {
     id: 3,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c6d8f9d5-7009-4461-ba53-69b3663571ca___51e79b396864faa5422c867aeecec916.jpg",
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/f059946c-19b4-4c9f-8e52-046f4c829731___04a15065f2cf5eced69aaf8b05abbd08.jpg",
     title: "Líneas Premium",
     descripcion: "Descubre nuestras líneas más innovadoras"
   },
   {
     id: 4,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/856f1288-065f-49fe-881b-06bf708b17db___b969bf59838b6f7c32d49e32a34e3f7d.jpg",
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c2d753ac-ceb0-4189-b92e-2c9333ea306f___f381c9333b1a429af242589d82314d54.jpg",
     title: "Productos Destacados",
     descripcion: "Los favoritos de nuestros clientes"
-  },
-  {
-    id: 5,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/eba8dab2-1e9d-4737-a5cf-e3c9859baa94___4f533fb16cedfe642183f21b76666236.jpg",
-    title: "Envío Gratis",
-    descripcion: "Promociones especiales y envío sin costo"
   }
 ];
 
