@@ -106,7 +106,7 @@ export const mockProducts = [
     tipo: "Contorno de ojos",
     tipo_piel: ["Piel madura", "Pérdida de firmeza"],
     funcion: ["Rejuvenecimiento", "Firmeza", "Densidad"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Plasma+Infusion+Eye+Contour",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156103-800-auto?v=638385178116500000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: false
