@@ -550,7 +550,7 @@ export const mockProducts = [
     tipo: "Crema de manos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Protección manos", "Equilibrio microbioma", "Hidratación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Skinbioma+Hand+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156544-800-auto?v=638888016942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: true
