@@ -752,7 +752,7 @@ export const mockProducts = [
     producto: "Ageless Complex",
     presentacion: "50g",
     precio_profesional_ARS: 19000,
-    precio_publico_ARS: 31500,
+    precio_publico_ARS: 33500,
     tipo: "Complejo anti-age",
     tipo_piel: ["Piel madura", "Signos de edad"],
     funcion: ["Protección antioxidante", "Anti-age", "Regeneración"],
