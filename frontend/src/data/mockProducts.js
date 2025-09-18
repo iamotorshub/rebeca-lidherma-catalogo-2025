@@ -1870,7 +1870,7 @@ export const mockProducts = [
     tipo: "Parches ojos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación instantánea", "Anti-age", "Descongestión"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Vita+Shield+Eye+Patches",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156584-800-auto?v=638888056942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: true
