@@ -1816,7 +1816,7 @@ export const mockProducts = [
     tipo: "Brillo labial",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Brillo", "Hidratación", "Volumen"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Lip+Gloss+Transparent",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156583-800-auto?v=638888055942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 21,
     cuotas_sin_interes: false
