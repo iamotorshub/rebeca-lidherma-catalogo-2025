@@ -756,7 +756,7 @@ export const mockProducts = [
     tipo: "Complejo anti-age",
     tipo_piel: ["Piel madura", "Signos de edad"],
     funcion: ["Protección antioxidante", "Anti-age", "Regeneración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Vita+Shield+Ageless+Complex",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156225-800-auto?v=638386080040030000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 11,
     cuotas_sin_interes: false
