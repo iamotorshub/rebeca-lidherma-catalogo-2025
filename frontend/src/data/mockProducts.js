@@ -1830,7 +1830,7 @@ export const mockProducts = [
     producto: "Lip Balm SPF 15",
     presentacion: "4g",
     precio_profesional_ARS: 8500,
-    precio_publico_ARS: 12500,
+    precio_publico_ARS: 15000,
     tipo: "Protector labial",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Protección SPF 15", "Hidratación", "Suavidad"],
