@@ -142,7 +142,7 @@ export const mockProducts = [
     tipo: "Crema facial suave",
     tipo_piel: ["Piel sensible", "Piel madura"],
     funcion: ["Rejuvenecimiento", "Firmeza", "Suavidad"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Plasma+Infusion+Soft+Face+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156105-800-auto?v=638385180226430000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 9,
     cuotas_sin_interes: true
