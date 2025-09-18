@@ -1204,7 +1204,7 @@ export const mockProducts = [
     tipo: "Crema de día",
     tipo_piel: ["Piel madura", "+60 años"],
     funcion: ["Anti-age maduro", "Protección", "Firmeza"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Silver+Age+Day+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156565-800-auto?v=638888037942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 6,
     cuotas_sin_interes: true
