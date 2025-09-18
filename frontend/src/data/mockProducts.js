@@ -160,7 +160,7 @@ export const mockProducts = [
     tipo: "Serum facial",
     tipo_piel: ["Piel madura", "Pérdida de firmeza"],
     funcion: ["Rejuvenecimiento", "Firmeza", "Densidad"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Plasma+Infusion+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156106-800-auto?v=638385181226430000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 14,
     cuotas_sin_interes: false
