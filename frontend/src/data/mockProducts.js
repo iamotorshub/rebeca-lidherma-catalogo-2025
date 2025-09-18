@@ -216,7 +216,7 @@ export const mockProducts = [
     tipo: "Crema de manos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Vitamina C", "Hidratación", "Anti-manchas"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Radian+C+Hand+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156116-800-auto?v=638385192141430000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 20,
     cuotas_sin_interes: false
