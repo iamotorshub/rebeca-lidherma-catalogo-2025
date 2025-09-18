@@ -830,7 +830,7 @@ export const mockProducts = [
     tipo: "Contorno de ojos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Vitamina B12", "Anti-age", "Reparación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Vita+B12+Eye+Contour",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156540-800-auto?v=638888012942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 6,
     cuotas_sin_interes: true
