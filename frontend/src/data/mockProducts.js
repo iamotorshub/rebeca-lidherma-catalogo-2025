@@ -532,7 +532,7 @@ export const mockProducts = [
     tipo: "Gel de ducha",
     tipo_piel: ["Piel sensible", "Todos los tipos"],
     funcion: ["Limpieza corporal", "Equilibrio microbioma", "Hidratación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Skinbioma+Shower+Gel",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156543-800-auto?v=638888015942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 16,
     cuotas_sin_interes: false
