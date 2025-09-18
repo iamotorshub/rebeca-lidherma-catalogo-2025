@@ -290,7 +290,7 @@ export const mockProducts = [
     tipo: "Serum hidratante",
     tipo_piel: ["Piel deshidratada", "Todos los tipos"],
     funcion: ["Hidratación profunda", "Efecto inmediato", "Regeneración"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1JobBUtkGXDzwxxeIauq9RPJyNgsucnR1&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156077-800-auto?v=638385136381570000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 17,
     cuotas_sin_interes: true
