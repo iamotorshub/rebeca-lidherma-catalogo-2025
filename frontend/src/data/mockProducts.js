@@ -328,7 +328,7 @@ export const mockProducts = [
     tipo: "Loción hidratante",
     tipo_piel: ["Piel mixta", "Piel grasa"],
     funcion: ["Control de poros", "Hidratación", "Equilibrio"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Hydrapore+Moisturizing+Lotion",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156564-800-auto?v=638888036942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: false
