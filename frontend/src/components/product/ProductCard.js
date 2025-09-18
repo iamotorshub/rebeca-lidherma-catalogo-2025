@@ -47,12 +47,14 @@ const ProductCard = ({ product }) => {
       <Link to={`/producto/${product.slug}`} className="block">
         <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-pink-50 to-rose-50">
           <img 
-            src={product.imagen_url} 
+            src={product.imagen_url || `https://via.placeholder.com/400x400/F4C2C2/9CA3AF?text=${encodeURIComponent(product.producto)}`} 
             alt={product.producto}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             onError={(e) => {
-              // Placeholder más bonito y femenino
-              e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRkFEQUREIiBmaWxsLW9wYWNpdHk9IjAuMyIvPgo8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMDAiIHI9IjMwIiBmaWxsPSIjRjRDMkMyIi8+CjxyZWN0IHg9IjEyMCIgeT0iMTQwIiB3aWR0aD0iNjAiIGhlaWdodD0iODAiIHJ4PSIxMCIgZmlsbD0iI0Y0QzJDMiIvPgo8dGV4dCB4PSIxNTAiIHk9IjI2MCIgZm9udC1mYW1pbHk9IlBsYXlmYWlyIERpc3BsYXkiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI1MDAiIGZpbGw9IiM5Q0EzQUYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxpZGhlcm1hPC90ZXh0Pgo8L3N2Zz4K';
+              // Fallback mejorado con nombre del producto
+              const productName = encodeURIComponent(product.producto);
+              const lineName = encodeURIComponent(product.linea);
+              e.target.src = `https://via.placeholder.com/400x400/F4C2C2/8B5A5A?text=${productName}+%0A${lineName}`;
             }}
           />
           
