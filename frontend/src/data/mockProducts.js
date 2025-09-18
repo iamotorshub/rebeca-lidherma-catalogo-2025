@@ -2068,7 +2068,7 @@ export const mockProducts = [
     tipo: "Kit tratamiento profesional",
     tipo_piel: ["Uso profesional"],
     funcion: ["Tratamiento completo", "Profesional", "Cabina"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Professional+Facial+Treatment+Complete+Kit",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156590-800-auto?v=638888062942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 2,
     cuotas_sin_interes: false
