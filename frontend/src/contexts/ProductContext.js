@@ -34,11 +34,27 @@ function productReducer(state, action) {
       return { ...state, error: action.payload, loading: false };
     
     case 'SET_PRODUCTS':
+      // Selección curada de productos más vendidos (sin duplicados, diversas líneas)
+      const featuredProductIds = [
+        "5", // Hyaluronic 4D Serum
+        "16", // Biosmotic Water Drops  
+        "3", // Hyaluronic 4D Face Cream
+        "20", // Dherma Science Advance Formula
+        "51", // Acnex Depure Intensive Cleanser
+        "49", // Aqua Shot Micellar Water
+        "14", // Biosmotic Water Booster
+        "47" // Niacinamide Serum
+      ];
+      
+      const featuredProducts = featuredProductIds
+        .map(id => action.payload.find(product => product.id === id))
+        .filter(Boolean); // Remove any undefined products
+      
       return {
         ...state,
         allProducts: action.payload,
         filteredProducts: action.payload,
-        featuredProducts: action.payload.slice(0, 8),
+        featuredProducts: featuredProducts,
         loading: false
       };
     
