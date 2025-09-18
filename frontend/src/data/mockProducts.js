@@ -1798,7 +1798,7 @@ export const mockProducts = [
     tipo: "Lápiz de cejas",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Definición cejas", "Color natural", "Larga duración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Eyebrow+Pencil+Brown",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156582-800-auto?v=638888054942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 14,
     cuotas_sin_interes: false
