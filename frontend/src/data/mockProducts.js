@@ -1384,7 +1384,7 @@ export const mockProducts = [
     producto: "UVA Plus SPF 50+",
     presentacion: "100g",
     precio_profesional_ARS: 20500,
-    precio_publico_ARS: 30000,
+    precio_publico_ARS: 31500,
     tipo: "Protector solar",
     tipo_piel: ["Todos los tipos"],
     funcion: ["SPF 50+", "Protección alta", "UV"],
