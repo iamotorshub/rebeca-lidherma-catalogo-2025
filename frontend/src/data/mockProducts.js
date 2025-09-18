@@ -1706,7 +1706,7 @@ export const mockProducts = [
     tipo: "Brocha",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Aplicación uniforme", "Precisión", "Higiene"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Lidherma+Brocha+Mascarillas",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156555-800-auto?v=638888027942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: false
