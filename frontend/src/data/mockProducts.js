@@ -1556,7 +1556,7 @@ export const mockProducts = [
     tipo: "Agua micelar",
     tipo_piel: ["Piel grasa", "Piel contaminada"],
     funcion: ["Limpieza profunda", "Detoxificación", "Anti-polución"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Detoxify+Micellar+Cleansing+Water",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156551-800-auto?v=638888023942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 13,
     cuotas_sin_interes: true
