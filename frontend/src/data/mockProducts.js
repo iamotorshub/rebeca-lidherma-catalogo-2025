@@ -680,7 +680,7 @@ export const mockProducts = [
     tipo: "Crema piel grasa",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Renovación celular", "Control grasa", "Equilibrio"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Renovage+Normal+and+Oily+Skin",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156534-800-auto?v=638888006942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: false
