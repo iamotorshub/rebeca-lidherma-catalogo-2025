@@ -1630,7 +1630,7 @@ export const mockProducts = [
     tipo: "Gotas potenciadoras",
     tipo_piel: ["Piel muy deshidratada", "Todos los tipos"],
     funcion: ["Hidratación extrema", "Potenciador", "Regeneración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Hyaluronic+4D+Booster+Drops",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156561-800-auto?v=638888033942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 5,
     cuotas_sin_interes: true
