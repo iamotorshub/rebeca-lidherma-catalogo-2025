@@ -86,7 +86,7 @@ export const mockProducts = [
     tipo: "Serum facial",
     tipo_piel: ["Todos los tipos", "Piel deshidratada"],
     funcion: ["Hidratación profunda", "4 pesos moleculares", "Anti-age"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1nnPtzEenucHWcf_csVoyzkaeAGD2pBAP&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156086-800-auto?v=638385160234300000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: true
