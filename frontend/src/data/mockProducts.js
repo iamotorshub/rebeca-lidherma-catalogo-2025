@@ -2196,6 +2196,12 @@ export const heroBanners = [
     url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/856f1288-065f-49fe-881b-06bf708b17db___b969bf59838b6f7c32d49e32a34e3f7d.jpg",
     title: "Productos Destacados",
     descripcion: "Los favoritos de nuestros clientes"
+  },
+  {
+    id: 5,
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/eba8dab2-1e9d-4737-a5cf-e3c9859baa94___4f533fb16cedfe642183f21b76666236.jpg",
+    title: "Envío Gratis",
+    descripcion: "Promociones especiales y envío sin costo"
   }
 ];
 
