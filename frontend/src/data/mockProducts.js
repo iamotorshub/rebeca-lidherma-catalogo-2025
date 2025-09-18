@@ -624,7 +624,7 @@ export const mockProducts = [
     tipo: "Crema diaria",
     tipo_piel: ["Piel madura", "Arrugas"],
     funcion: ["Renovación celular", "Anti-arrugas", "Uso diario"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Retinol+A+Daily+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156124-800-auto?v=638385206491770000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 6,
     cuotas_sin_interes: true
