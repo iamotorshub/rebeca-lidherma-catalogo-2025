@@ -588,7 +588,7 @@ export const mockProducts = [
     tipo: "Emulsión facial",
     tipo_piel: ["Piel madura", "Arrugas"],
     funcion: ["Renovación celular", "Anti-arrugas", "Textura"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Retinol+A+Emulsion",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156125-800-auto?v=638385207491770000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 9,
     cuotas_sin_interes: true
