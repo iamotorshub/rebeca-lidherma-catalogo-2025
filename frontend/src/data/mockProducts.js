@@ -294,6 +294,122 @@ export const mockProducts = [
     disponible: true,
     stock: 17,
     cuotas_sin_interes: true
+  },
+
+  // AQUA SHOT - URLs reales del sitio oficial
+  {
+    id: "17",
+    slug: "aqua-shot-face-cream-50g",
+    linea: "Aqua Shot",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Rostro",
+    producto: "Face Cream",
+    presentacion: "50g",
+    precio_profesional_ARS: 16000,
+    precio_publico_ARS: 26000,
+    tipo: "Crema facial hidratante",
+    tipo_piel: ["Piel deshidratada", "Todos los tipos"],
+    funcion: ["Hidratación intensa", "Efecto inmediato", "Absorción rápida"],
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156151-800-auto?v=638385924715130000&width=800&height=auto&aspect=true",
+    disponible: true,
+    stock: 16,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "18",
+    slug: "aqua-shot-body-cream-280g",
+    linea: "Aqua Shot",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Cuerpo",
+    producto: "Body Cream",
+    presentacion: "280g",
+    precio_profesional_ARS: 14500,
+    precio_publico_ARS: 23500,
+    tipo: "Crema corporal",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Hidratación corporal", "Absorción rápida", "Efecto duradero"],
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156142-800-auto?v=638385224671130000&width=800&height=auto&aspect=true",
+    disponible: true,
+    stock: 14,
+    cuotas_sin_interes: false
+  },
+
+  // SUPER SERUM - Productos del sitio oficial
+  {
+    id: "19",
+    slug: "super-serum-moisturizer-30ml",
+    linea: "Super Serum",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Rostro",
+    producto: "Moisturizer",
+    presentacion: "30ml",
+    precio_profesional_ARS: 28000,
+    precio_publico_ARS: 41500,
+    tipo: "Serum hidratante",
+    tipo_piel: ["Todos los tipos", "Piel deshidratada"],
+    funcion: ["Hidratación intensa", "Regeneración", "Anti-age"],
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156517-800-auto?v=638832836743030000&width=800&height=auto&aspect=true",
+    disponible: true,
+    stock: 9,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "20",
+    slug: "super-eyes-global-repair-15g",
+    linea: "Super Eyes",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Ojos",
+    producto: "Global Repair",
+    presentacion: "15g",
+    precio_profesional_ARS: 26000,
+    precio_publico_ARS: 39000,
+    tipo: "Contorno de ojos",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Anti-age", "Reparación global", "Firmeza"],
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156520-800-auto?v=638852070382670000&width=800&height=auto&aspect=true",
+    disponible: true,
+    stock: 7,
+    cuotas_sin_interes: true
+  },
+
+  // SKIN COLOR BB CREAM - Maquillaje
+  {
+    id: "21",
+    slug: "skin-color-bb-cream-nude-30g",
+    linea: "Skin Color",
+    categoria_L1: "Maquillaje",
+    categoria_L2: "Base",
+    producto: "BB Cream Nude",
+    presentacion: "30g",
+    precio_profesional_ARS: 17000,
+    precio_publico_ARS: 25000,
+    tipo: "BB Cream",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Cobertura natural", "Hidratación", "Protección"],
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156383-800-auto?v=638406803405700000&width=800&height=auto&aspect=true",
+    disponible: true,
+    stock: 13,
+    cuotas_sin_interes: true
+  },
+
+  // HYDRAPORE
+  {
+    id: "22",
+    slug: "hydrapore-locion-125ml",
+    linea: "Hydrapore",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Rostro",
+    producto: "Loción",
+    presentacion: "125ml",
+    precio_profesional_ARS: 16500,
+    precio_publico_ARS: 27000,
+    tipo: "Loción hidratante",
+    tipo_piel: ["Piel mixta", "Piel grasa"],
+    funcion: ["Control de poros", "Hidratación", "Equilibrio"],
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156498-800-auto?v=638810188350300000&width=800&height=auto&aspect=true",
+    disponible: true,
+    stock: 18,
+    cuotas_sin_interes: false
   }
 ];
 
