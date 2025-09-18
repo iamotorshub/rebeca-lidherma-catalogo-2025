@@ -1278,7 +1278,7 @@ export const mockProducts = [
     tipo: "Corrector serum",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Corrección", "Hidratación", "Cobertura"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Serum+Concealer+Light",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156569-800-auto?v=638888041942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 11,
     cuotas_sin_interes: false
