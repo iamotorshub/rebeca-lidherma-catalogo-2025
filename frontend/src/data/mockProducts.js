@@ -1296,7 +1296,7 @@ export const mockProducts = [
     tipo: "Lápiz labial",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Color intenso", "Hidratación", "Larga duración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Lipstick+Ruby+Red",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156570-800-auto?v=638888042942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 22,
     cuotas_sin_interes: false
