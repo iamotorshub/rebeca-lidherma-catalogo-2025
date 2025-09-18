@@ -1480,7 +1480,7 @@ export const mockProducts = [
     tipo: "Leche corporal",
     tipo_piel: ["Piel sensible", "Todos los tipos"],
     funcion: ["Hidratación suave", "Equilibrio microbioma", "Protección"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Biosmotic+Body+Milk",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156575-800-auto?v=638888047942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: true
