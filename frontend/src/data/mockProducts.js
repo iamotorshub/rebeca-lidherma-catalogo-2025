@@ -1406,7 +1406,7 @@ export const mockProducts = [
     tipo: "Protector solar deportivo",
     tipo_piel: ["Todos los tipos"],
     funcion: ["SPF 30", "Resistente al agua", "Deporte"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Sun+Sport+SPF+30",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156545-800-auto?v=638919903975400000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: false
