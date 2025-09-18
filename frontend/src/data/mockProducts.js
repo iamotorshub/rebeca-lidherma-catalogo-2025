@@ -272,7 +272,7 @@ export const mockProducts = [
     tipo: "Crema hidratante",
     tipo_piel: ["Piel deshidratada", "Todos los tipos"],
     funcion: ["Hidratación profunda", "Efecto inmediato", "Regeneración"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1HJqWj-zYexqXNt88uU-suHnHCtGgnhMB&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156081-800-auto?v=638385148334230000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 13,
     cuotas_sin_interes: true
