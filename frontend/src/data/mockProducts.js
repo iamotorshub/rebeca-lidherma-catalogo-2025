@@ -1370,7 +1370,7 @@ export const mockProducts = [
     tipo: "Protector solar",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["SPF 40", "Toque seco", "Base maquillaje"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Sun+UVA+Plus+SPF+40",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156574-800-auto?v=638888046942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: false
