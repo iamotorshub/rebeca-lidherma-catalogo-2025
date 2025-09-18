@@ -1388,7 +1388,7 @@ export const mockProducts = [
     tipo: "Protector solar",
     tipo_piel: ["Todos los tipos"],
     funcion: ["SPF 50+", "Protección alta", "UV"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Sun+UVA+Plus+SPF+50",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156544-800-auto?v=638919901394270000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 14,
     cuotas_sin_interes: false
