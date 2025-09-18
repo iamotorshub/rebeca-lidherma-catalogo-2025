@@ -1424,7 +1424,7 @@ export const mockProducts = [
     tipo: "After sun",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Reparación post-solar", "Hidratación", "Calma"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Sun+After+Sun",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156208-800-auto?v=638386074138930000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 16,
     cuotas_sin_interes: false
