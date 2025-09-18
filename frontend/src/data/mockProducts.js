@@ -694,7 +694,7 @@ export const mockProducts = [
     producto: "Body Cream",
     presentacion: "180g",
     precio_profesional_ARS: 20000,
-    precio_publico_ARS: 31500,
+    precio_publico_ARS: 30000,
     tipo: "Crema corporal",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Renovación celular", "Hidratación corporal", "Anti-age"],
