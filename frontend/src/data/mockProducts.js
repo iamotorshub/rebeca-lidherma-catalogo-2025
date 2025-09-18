@@ -568,7 +568,7 @@ export const mockProducts = [
     tipo: "Loción facial",
     tipo_piel: ["Piel sensible", "Todos los tipos"],
     funcion: ["Equilibrio microbioma", "Hidratación", "Protección"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Skinbioma+Face+Lotion",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156545-800-auto?v=638888017942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 13,
     cuotas_sin_interes: false
