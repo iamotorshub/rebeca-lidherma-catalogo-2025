@@ -640,7 +640,7 @@ export const mockProducts = [
     producto: "Ultra Dry Skin",
     presentacion: "50g",
     precio_profesional_ARS: 20000,
-    precio_publico_ARS: 31500,
+    precio_publico_ARS: 33500,
     tipo: "Crema piel muy seca",
     tipo_piel: ["Piel muy seca", "Piel madura"],
     funcion: ["Renovación celular", "Hidratación intensa", "Nutrición"],
