@@ -606,7 +606,7 @@ export const mockProducts = [
     tipo: "Crema anti-edad",
     tipo_piel: ["Piel madura", "Arrugas"],
     funcion: ["Renovación celular", "Anti-arrugas", "Firmeza"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Retinol+A+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156123-800-auto?v=638385205491770000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 7,
     cuotas_sin_interes: true
