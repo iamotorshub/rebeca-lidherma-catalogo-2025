@@ -1222,7 +1222,7 @@ export const mockProducts = [
     tipo: "Crema de noche",
     tipo_piel: ["Piel madura", "+60 años"],
     funcion: ["Anti-age maduro", "Regeneración nocturna", "Nutrición"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Silver+Age+Night+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156566-800-auto?v=638888038942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: true
