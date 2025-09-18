@@ -2171,31 +2171,31 @@ export const whatsappConfig = {
   defaultMessage: "¡Hola Rebeca! Me gustaría consultar sobre productos Lidherma 💆‍♀️✨"
 };
 
-// Banners del carrusel - 4 imágenes específicas de Rebeca Beauty Store
+// Banners del carrusel - URLs REALES del sitio oficial de Lidherma
 export const heroBanners = [
   {
     id: 1,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/ue4c67p9_image.png",
-    title: "Promociones Lidherma",
-    descripcion: "Descuentos especiales y ofertas exclusivas"
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/fb8e544c-763e-4a34-88f3-97659fa17bdd___c4a28372a79ea44216cb958854e24b13.jpg",
+    title: "Cuidado de la Piel",
+    descripcion: "Productos profesionales para el cuidado facial"
   },
   {
     id: 2,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/5zmfmbn7_image.png", 
-    title: "Productos Premium",
-    descripcion: "Dermocosmética profesional de máxima calidad"
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c92d59d2-c6a8-40ee-8872-bf6489465bff___d63409d49ab2b369a56ff1e5fbf1e4d5.jpg",
+    title: "Promociones Especiales",
+    descripcion: "Descuentos y ofertas exclusivas en productos seleccionados"
   },
   {
     id: 3,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/ukx7hfbe_image.png",
-    title: "Líneas Profesionales",
-    descripcion: "Tratamientos especializados para cada tipo de piel"
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c6d8f9d5-7009-4461-ba53-69b3663571ca___51e79b396864faa5422c867aeecec916.jpg",
+    title: "Líneas Premium",
+    descripcion: "Descubre nuestras líneas más innovadoras"
   },
   {
     id: 4,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/uk5m6mr1_image.png",
-    title: "Rebeca Beauty Store",
-    descripcion: "Distribuidor Oficial Exclusivo Lidherma"
+    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/856f1288-065f-49fe-881b-06bf708b17db___b969bf59838b6f7c32d49e32a34e3f7d.jpg",
+    title: "Productos Destacados",
+    descripcion: "Los favoritos de nuestros clientes"
   }
 ];
 
