@@ -1314,7 +1314,7 @@ export const mockProducts = [
     tipo: "Máscara tratamiento",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Volumen", "Tratamiento", "Larga duración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Treatment+Mascara+Black",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156571-800-auto?v=638888043942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
