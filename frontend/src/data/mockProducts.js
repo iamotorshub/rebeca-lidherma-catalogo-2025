@@ -1420,7 +1420,7 @@ export const mockProducts = [
     producto: "After Sun",
     presentacion: "150ml",
     precio_profesional_ARS: 14500,
-    precio_publico_ARS: 22000,
+    precio_publico_ARS: 24000,
     tipo: "After sun",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Reparación post-solar", "Hidratación", "Calma"],
