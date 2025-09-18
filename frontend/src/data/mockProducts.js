@@ -1834,7 +1834,7 @@ export const mockProducts = [
     tipo: "Protector labial",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Protección SPF 15", "Hidratación", "Suavidad"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Sun+Lip+Balm+SPF+15",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156545-800-auto?v=638919903975400000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 25,
     cuotas_sin_interes: false
