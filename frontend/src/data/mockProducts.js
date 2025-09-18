@@ -68,7 +68,7 @@ export const mockProducts = [
     tipo: "Crema rica",
     tipo_piel: ["Piel muy seca", "Piel madura"],
     funcion: ["Hidratación intensa", "Nutrición", "Regeneración"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1g97PP1M2LyR6I6aMOtjajjuoSXgLXeQ1&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156089-800-auto?v=638385163279400000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 10,
     cuotas_sin_interes: true
