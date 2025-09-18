@@ -1612,7 +1612,7 @@ export const mockProducts = [
     tipo: "Mascarilla intensiva",
     tipo_piel: ["Piel madura", "Pérdida de firmeza"],
     funcion: ["Rejuvenecimiento", "Firmeza", "Regeneración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Plasma+Infusion+Intensive+Mask",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156107-800-auto?v=638385182226430000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 7,
     cuotas_sin_interes: true
