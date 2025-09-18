@@ -958,7 +958,7 @@ export const mockProducts = [
     producto: "Control Treatment",
     presentacion: "50g",
     precio_profesional_ARS: 18500,
-    precio_publico_ARS: 30000,
+    precio_publico_ARS: 31500,
     tipo: "Tratamiento facial",
     tipo_piel: ["Piel acneica", "Piel grasa"],
     funcion: ["Anti-acné", "Purificante", "Tratamiento localizado"],
