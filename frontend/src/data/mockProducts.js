@@ -1350,7 +1350,7 @@ export const mockProducts = [
     tipo: "Paleta de sombras",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Color", "Larga duración", "Versatilidad"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Eye+Shadow+Palette",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156573-800-auto?v=638888045942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: false
