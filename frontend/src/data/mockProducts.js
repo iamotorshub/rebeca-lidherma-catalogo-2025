@@ -1762,7 +1762,7 @@ export const mockProducts = [
     tipo: "Serum retinol",
     tipo_piel: ["Piel madura", "Arrugas"],
     funcion: ["Renovación celular", "Anti-arrugas", "Textura"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Science+Retinol+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156074-800-auto?v=638385113836930000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 6,
     cuotas_sin_interes: true
