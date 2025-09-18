@@ -1942,7 +1942,7 @@ export const mockProducts = [
     tipo: "Mascarilla colágeno",
     tipo_piel: ["Uso profesional"],
     funcion: ["Colágeno", "Firmeza", "Regeneración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Professional+Collagen+Mask",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156586-800-auto?v=638888058942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 4,
     cuotas_sin_interes: false
