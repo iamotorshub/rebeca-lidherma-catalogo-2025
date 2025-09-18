@@ -1,6 +1,6 @@
-// CATÁLOGO COMPLETO LIDHERMA - 112 PRODUCTOS REALES CON URLs DE GOOGLE DRIVE
+// ACTUALIZANDO CON CSV REAL - CORRIGIENDO PRODUCTOS MAL MAPEADOS
 export const mockProducts = [
-  // HYALURONIC 4D - Línea estrella
+  // HYALURONIC 4D - URLs CORRECTAS del CSV
   {
     id: "1",
     slug: "hyaluronic-4d-cleansing-foam-145ml",
@@ -50,7 +50,7 @@ export const mockProducts = [
     tipo: "Crema facial",
     tipo_piel: ["Piel seca", "Piel madura"],
     funcion: ["Hidratación intensa", "Firmeza", "Regeneración"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156087-800-auto?v=638385162357030000&width=800&height=auto&aspect=true",
+    imagen_url: "https://drive.google.com/thumbnail?id=1g7UQ1XIYmfyiP142snDB6KYAx9SY7H3U&sz=w1200",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: true
@@ -92,7 +92,7 @@ export const mockProducts = [
     cuotas_sin_interes: true
   },
 
-  // PLASMA INFUSION
+  // PLASMA INFUSION - Agregando URLs reales
   {
     id: "6",
     slug: "plasma-infusion-eye-contour-15g",
@@ -240,7 +240,7 @@ export const mockProducts = [
     cuotas_sin_interes: false
   },
 
-  // BIOSMOTIC
+  // BIOSMOTIC - URLs del CSV
   {
     id: "14",
     slug: "biosmotic-water-booster-75ml",
@@ -254,7 +254,7 @@ export const mockProducts = [
     tipo: "Potenciador hidratante",
     tipo_piel: ["Piel deshidratada", "Todos los tipos"],
     funcion: ["Hidratación profunda", "Efecto inmediato", "Regeneración"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156080-800-auto?v=638385148118670000&width=800&height=auto&aspect=true",
+    imagen_url: "https://drive.google.com/thumbnail?id=1Ge1WZGXXFqIarwHXI2H4WKCHhb6YqrLg&sz=w1200",
     disponible: true,
     stock: 22,
     cuotas_sin_interes: true
@@ -296,120 +296,134 @@ export const mockProducts = [
     cuotas_sin_interes: true
   },
 
-  // AQUA SHOT - URLs reales del sitio oficial
+  // HYDRAPORE - Agregando más productos del CSV
   {
     id: "17",
-    slug: "aqua-shot-face-cream-50g",
-    linea: "Aqua Shot",
+    slug: "hydrapore-gel-cream-50g",
+    linea: "Hydrapore",
     categoria_L1: "Cuidado de la piel",
     categoria_L2: "Rostro",
-    producto: "Face Cream",
+    producto: "Gel Cream",
     presentacion: "50g",
-    precio_profesional_ARS: 16000,
-    precio_publico_ARS: 26000,
-    tipo: "Crema facial hidratante",
-    tipo_piel: ["Piel deshidratada", "Todos los tipos"],
-    funcion: ["Hidratación intensa", "Efecto inmediato", "Absorción rápida"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156151-800-auto?v=638385924715130000&width=800&height=auto&aspect=true",
+    precio_profesional_ARS: 22000,
+    precio_publico_ARS: 35500,
+    tipo: "Gel crema",
+    tipo_piel: ["Piel mixta", "Piel grasa"],
+    funcion: ["Control de poros", "Hidratación", "Equilibrio"],
+    imagen_url: "https://drive.google.com/thumbnail?id=1wkgzIRWWEtgDhLDUW7J6mztcAxJo19L8&sz=w1200",
     disponible: true,
-    stock: 16,
+    stock: 14,
     cuotas_sin_interes: true
   },
   {
     id: "18",
-    slug: "aqua-shot-body-cream-280g",
-    linea: "Aqua Shot",
-    categoria_L1: "Cuidado de la piel",
-    categoria_L2: "Cuerpo",
-    producto: "Body Cream",
-    presentacion: "280g",
-    precio_profesional_ARS: 14500,
-    precio_publico_ARS: 23500,
-    tipo: "Crema corporal",
-    tipo_piel: ["Todos los tipos"],
-    funcion: ["Hidratación corporal", "Absorción rápida", "Efecto duradero"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156142-800-auto?v=638385224671130000&width=800&height=auto&aspect=true",
-    disponible: true,
-    stock: 14,
-    cuotas_sin_interes: false
-  },
-
-  // SUPER SERUM - Productos del sitio oficial
-  {
-    id: "19",
-    slug: "super-serum-moisturizer-30ml",
-    linea: "Super Serum",
-    categoria_L1: "Cuidado de la piel",
-    categoria_L2: "Rostro",
-    producto: "Moisturizer",
-    presentacion: "30ml",
-    precio_profesional_ARS: 28000,
-    precio_publico_ARS: 41500,
-    tipo: "Serum hidratante",
-    tipo_piel: ["Todos los tipos", "Piel deshidratada"],
-    funcion: ["Hidratación intensa", "Regeneración", "Anti-age"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156517-800-auto?v=638832836743030000&width=800&height=auto&aspect=true",
-    disponible: true,
-    stock: 9,
-    cuotas_sin_interes: true
-  },
-  {
-    id: "20",
-    slug: "super-eyes-global-repair-15g",
-    linea: "Super Eyes",
-    categoria_L1: "Cuidado de la piel",
-    categoria_L2: "Ojos",
-    producto: "Global Repair",
-    presentacion: "15g",
-    precio_profesional_ARS: 26000,
-    precio_publico_ARS: 39000,
-    tipo: "Contorno de ojos",
-    tipo_piel: ["Todos los tipos"],
-    funcion: ["Anti-age", "Reparación global", "Firmeza"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156520-800-auto?v=638852070382670000&width=800&height=auto&aspect=true",
-    disponible: true,
-    stock: 7,
-    cuotas_sin_interes: true
-  },
-
-  // SKIN COLOR BB CREAM - Maquillaje
-  {
-    id: "21",
-    slug: "skin-color-bb-cream-nude-30g",
-    linea: "Skin Color",
-    categoria_L1: "Maquillaje",
-    categoria_L2: "Base",
-    producto: "BB Cream Nude",
-    presentacion: "30g",
-    precio_profesional_ARS: 17000,
-    precio_publico_ARS: 25000,
-    tipo: "BB Cream",
-    tipo_piel: ["Todos los tipos"],
-    funcion: ["Cobertura natural", "Hidratación", "Protección"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156383-800-auto?v=638406803405700000&width=800&height=auto&aspect=true",
-    disponible: true,
-    stock: 13,
-    cuotas_sin_interes: true
-  },
-
-  // HYDRAPORE
-  {
-    id: "22",
-    slug: "hydrapore-locion-125ml",
+    slug: "hydrapore-moisturizing-lotion-125ml",
     linea: "Hydrapore",
     categoria_L1: "Cuidado de la piel",
     categoria_L2: "Rostro",
-    producto: "Loción",
+    producto: "Moisturizing Lotion",
     presentacion: "125ml",
-    precio_profesional_ARS: 16500,
+    precio_profesional_ARS: 16000,
     precio_publico_ARS: 27000,
     tipo: "Loción hidratante",
     tipo_piel: ["Piel mixta", "Piel grasa"],
     funcion: ["Control de poros", "Hidratación", "Equilibrio"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156498-800-auto?v=638810188350300000&width=800&height=auto&aspect=true",
+    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Hydrapore+Moisturizing+Lotion",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: false
+  },
+  {
+    id: "19",
+    slug: "hydrapore-eye-contour-15ml",
+    linea: "Hydrapore",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Ojos",
+    producto: "Eye Contour",
+    presentacion: "15ml",
+    precio_profesional_ARS: 16500,
+    precio_publico_ARS: 27500,
+    tipo: "Contorno de ojos",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Control de poros", "Hidratación", "Anti-age"],
+    imagen_url: "https://drive.google.com/thumbnail?id=1oXuDynRiFXYFz5XB7XflNQYZWCsOG2it&sz=w1200",
+    disponible: true,
+    stock: 9,
+    cuotas_sin_interes: false
+  },
+
+  // DHERMA SCIENCE - Tecnología avanzada
+  {
+    id: "20",
+    slug: "dherma-science-advance-formula-32g",
+    linea: "Dherma Science",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Rostro",
+    producto: "Advance Formula",
+    presentacion: "32g",
+    precio_profesional_ARS: 28000,
+    precio_publico_ARS: 45000,
+    tipo: "Fórmula avanzada",
+    tipo_piel: ["Piel madura", "Signos avanzados"],
+    funcion: ["Tecnología avanzada", "Regeneración", "Firmeza"],
+    imagen_url: "https://drive.google.com/thumbnail?id=1PNaXdkmNOoKTKfd6I2KpQaYCucn3lMlo&sz=w1200",
+    disponible: true,
+    stock: 6,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "21",
+    slug: "dherma-science-eye-drone-technology-15g",
+    linea: "Dherma Science",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Ojos",
+    producto: "Eye Drone Technology",
+    presentacion: "15g",
+    precio_profesional_ARS: 26000,
+    precio_publico_ARS: 40000,
+    tipo: "Contorno de ojos avanzado",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Tecnología drone", "Anti-age", "Firmeza"],
+    imagen_url: "https://drive.google.com/thumbnail?id=1SiIyJtvmEqH74btsozClDq1hqOEtHebO&sz=w1200",
+    disponible: true,
+    stock: 5,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "22",
+    slug: "dherma-science-night-reset-cream-50g",
+    linea: "Dherma Science",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Rostro",
+    producto: "Night Reset Cream",
+    presentacion: "50g",
+    precio_profesional_ARS: 30000,
+    precio_publico_ARS: 48000,
+    tipo: "Crema nocturna",
+    tipo_piel: ["Piel madura", "Signos avanzados"],
+    funcion: ["Tecnología avanzada", "Regeneración nocturna", "Firmeza"],
+    imagen_url: "https://drive.google.com/thumbnail?id=1Swxm1jHhOORJgmyK4UlSj5sNA2WpfiGW&sz=w1200",
+    disponible: true,
+    stock: 7,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "23",
+    slug: "dherma-science-proteo-c-solution-20ml",
+    linea: "Dherma Science",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Rostro",
+    producto: "Proteo C-Solution (10 amp x 2ml)",
+    presentacion: "20ml",
+    precio_profesional_ARS: 28000,
+    precio_publico_ARS: 44000,
+    tipo: "Ampollas de vitamina C",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Vitamina C", "Iluminador", "Regeneración"],
+    imagen_url: "https://drive.google.com/thumbnail?id=1TcPu7nhNIpbFZpFPMgzVdqzKhYmnB9pe&sz=w1200",
+    disponible: true,
+    stock: 8,
+    cuotas_sin_interes: true
   }
 ];
 
