@@ -1888,7 +1888,7 @@ export const mockProducts = [
     tipo: "Serum nocturno",
     tipo_piel: ["Piel madura", "Anti-age"],
     funcion: ["Regeneración nocturna", "Longevidad celular", "Firmeza"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Cellactive+Night+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156558-800-auto?v=638888030942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 7,
     cuotas_sin_interes: true
