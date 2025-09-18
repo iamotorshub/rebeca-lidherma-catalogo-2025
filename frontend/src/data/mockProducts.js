@@ -496,7 +496,7 @@ export const mockProducts = [
     tipo: "Crema facial",
     tipo_piel: ["Piel sensible", "Todos los tipos"],
     funcion: ["Equilibrio microbioma", "Protección", "Reparación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Skinbioma+Face+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156526-800-auto?v=638887997063630000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 11,
     cuotas_sin_interes: false
