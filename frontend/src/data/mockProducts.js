@@ -1688,7 +1688,7 @@ export const mockProducts = [
     tipo: "Herramienta",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Aplicación", "Higiene", "Precisión"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Lidherma+Espátula+Aplicadora",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156554-800-auto?v=638888026942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 25,
     cuotas_sin_interes: false
