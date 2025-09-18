@@ -32,7 +32,7 @@ export const mockProducts = [
     tipo: "Contorno de ojos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación profunda", "Anti-age", "Firmeza"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1fa9LI5lP3M382v-sxfN10gEmyqk9izgp&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156088-800-auto?v=638385162665170000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: true
