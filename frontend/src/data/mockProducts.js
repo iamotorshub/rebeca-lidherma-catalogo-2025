@@ -458,7 +458,7 @@ export const mockProducts = [
     tipo: "Loción balanceadora",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Control oleosidad", "Equilibrio", "Hidratación ligera"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Matt+Balance+Lotion",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156456-800-auto?v=638500019754770000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
