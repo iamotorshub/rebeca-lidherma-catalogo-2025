@@ -14,7 +14,7 @@ export const mockProducts = [
     tipo: "Espuma limpiadora",
     tipo_piel: ["Todos los tipos", "Piel deshidratada"],
     funcion: ["Limpieza profunda", "Hidratación", "4 pesos moleculares"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1czgmuziSyOwvr1OlvYJsQBjaJoSTILkP&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156090-800-auto?v=638385163506830000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: true
