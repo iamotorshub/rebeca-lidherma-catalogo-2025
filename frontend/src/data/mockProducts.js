@@ -1500,7 +1500,7 @@ export const mockProducts = [
     tipo: "Tratamiento de manos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Renovación celular", "Anti-age manos", "Protección"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Renovage+Hand+Treatment",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156535-800-auto?v=638888007942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
