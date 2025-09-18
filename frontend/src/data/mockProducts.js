@@ -1260,7 +1260,7 @@ export const mockProducts = [
     tipo: "Base anti-age",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Cobertura", "Anti-age", "Hidratación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Mímika+Perfect+Skin+Antiage+Nude",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156568-800-auto?v=638888040942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 7,
     cuotas_sin_interes: true
