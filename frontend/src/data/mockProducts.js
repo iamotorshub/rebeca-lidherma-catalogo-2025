@@ -1924,7 +1924,7 @@ export const mockProducts = [
     tipo: "Limpiador suave",
     tipo_piel: ["Piel madura", "+60 años"],
     funcion: ["Limpieza suave", "Nutrición", "Respeto cutáneo"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Silver+Age+Gentle+Cleanser",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156585-800-auto?v=638888057942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 13,
     cuotas_sin_interes: false
