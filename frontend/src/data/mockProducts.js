@@ -254,7 +254,7 @@ export const mockProducts = [
     tipo: "Potenciador hidratante",
     tipo_piel: ["Piel deshidratada", "Todos los tipos"],
     funcion: ["Hidratación profunda", "Efecto inmediato", "Regeneración"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1Ge1WZGXXFqIarwHXI2H4WKCHhb6YqrLg&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156080-800-auto?v=638385148118670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 22,
     cuotas_sin_interes: true
