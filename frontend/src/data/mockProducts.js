@@ -2014,7 +2014,7 @@ export const mockProducts = [
     tipo: "Kit de viaje",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación", "Viaje", "Conveniencia"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Aqua+Shot+Travel+Kit",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156556-800-auto?v=638888028942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: false
