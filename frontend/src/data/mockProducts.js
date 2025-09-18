@@ -868,7 +868,7 @@ export const mockProducts = [
     tipo: "Serum facial",
     tipo_piel: ["Piel grasa", "Poros dilatados"],
     funcion: ["Control oleosidad", "Minimiza poros", "Balance"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Niacinamide+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156475-800-auto?v=638634045119200000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: true
