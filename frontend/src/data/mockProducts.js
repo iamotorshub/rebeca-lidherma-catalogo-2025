@@ -1744,7 +1744,7 @@ export const mockProducts = [
     tipo: "Tónico facial",
     tipo_piel: ["Piel sensible", "Todos los tipos"],
     funcion: ["Equilibrio pH", "Hidratación", "Preparación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Biosmotic+Tonic+Water",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156580-800-auto?v=638888052942670000&width=800&height=auto&aspect=true",
     disponible: true, 
     stock: 17,
     cuotas_sin_interes: false
