@@ -1960,7 +1960,7 @@ export const mockProducts = [
     tipo: "Ampollas vitamina C",
     tipo_piel: ["Uso profesional"],
     funcion: ["Vitamina C concentrada", "Iluminador", "Antioxidante"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Professional+Vitamin+C+Ampoules",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156587-800-auto?v=638888059942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 3,
     cuotas_sin_interes: false
