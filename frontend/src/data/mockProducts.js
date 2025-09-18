@@ -774,7 +774,7 @@ export const mockProducts = [
     tipo: "Complejo hidratante",
     tipo_piel: ["Piel deshidratada", "Todos los tipos"],
     funcion: ["Hidratación intensa", "Protección", "Antioxidante"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Vita+Shield+Hydra+Complex",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156228-800-auto?v=638386081316670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 13,
     cuotas_sin_interes: false
