@@ -676,7 +676,7 @@ export const mockProducts = [
     producto: "Normal and Oily Skin",
     presentacion: "30g",
     precio_profesional_ARS: 20000,
-    precio_publico_ARS: 31500,
+    precio_publico_ARS: 33500,
     tipo: "Crema piel grasa",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Renovación celular", "Control grasa", "Equilibrio"],
