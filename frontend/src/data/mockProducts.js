@@ -1240,7 +1240,7 @@ export const mockProducts = [
     tipo: "Serum concentrado",
     tipo_piel: ["Piel madura", "+60 años"],
     funcion: ["Anti-age intensivo", "Regeneración", "Firmeza"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Silver+Age+Concentrated+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156567-800-auto?v=638888039942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 5,
     cuotas_sin_interes: true
