@@ -657,31 +657,31 @@ export const whatsappConfig = {
   defaultMessage: "¡Hola Rebeca! Me gustaría consultar sobre productos Lidherma 💆‍♀️✨"
 };
 
-// Banners del carrusel - Rebeca Beauty Store + Lidherma
+// Banners del carrusel - 4 imágenes específicas de Rebeca Beauty Store
 export const heroBanners = [
   {
     id: 1,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/iukytht9_image.png",
-    title: "10% OFF Primera Compra",
-    descripcion: "Suscribite y obtené el descuento en tu primera compra"
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/ue4c67p9_image.png",
+    title: "Promociones Lidherma",
+    descripcion: "Descuentos especiales y ofertas exclusivas"
   },
   {
     id: 2,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/tsc1qdpj_Captura%20de%20pantalla%202025-09-14%20a%20la%28s%29%2020.58.39.png",
-    title: "Rebeca Beauty Store",
-    descripcion: "Distribuidor Oficial Exclusivo Lidherma"
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/5zmfmbn7_image.png", 
+    title: "Productos Premium",
+    descripcion: "Dermocosmética profesional de máxima calidad"
   },
   {
     id: 3,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/ee18a340-e16a-47ac-80bb-a691c461dfaf___51c0cfe06ab12560b32d002143feb914.jpg",
-    title: "Dherma Sun",
-    descripcion: "Protección solar inteligente"
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/ukx7hfbe_image.png",
+    title: "Líneas Profesionales",
+    descripcion: "Tratamientos especializados para cada tipo de piel"
   },
   {
     id: 4,
-    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/0oxdtm4x_image.png",
-    title: "Productos Premium Lidherma",
-    descripcion: "Dermocosmética profesional para cada tipo de piel"
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/uk5m6mr1_image.png",
+    title: "Rebeca Beauty Store",
+    descripcion: "Distribuidor Oficial Exclusivo Lidherma"
   }
 ];
 
