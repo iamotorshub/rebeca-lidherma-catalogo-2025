@@ -644,7 +644,7 @@ export const mockProducts = [
     tipo: "Crema piel muy seca",
     tipo_piel: ["Piel muy seca", "Piel madura"],
     funcion: ["Renovación celular", "Hidratación intensa", "Nutrición"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Renovage+Ultra+Dry+Skin",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156532-800-auto?v=638888004942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: false
