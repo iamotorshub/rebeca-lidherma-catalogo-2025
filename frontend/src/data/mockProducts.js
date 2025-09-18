@@ -2032,7 +2032,7 @@ export const mockProducts = [
     tipo: "Kit rutina completa",
     tipo_piel: ["Todos los tipos", "Piel deshidratada"],
     funcion: ["Rutina completa", "Hidratación 4D", "Ahorro"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Hyaluronic+4D+Complete+Routine",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156588-800-auto?v=638888060942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 5,
     cuotas_sin_interes: true
