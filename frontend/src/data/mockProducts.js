@@ -657,37 +657,31 @@ export const whatsappConfig = {
   defaultMessage: "¡Hola Rebeca! Me gustaría consultar sobre productos Lidherma 💆‍♀️✨"
 };
 
-// Banners del carrusel oficial de Lidherma
+// Banners del carrusel - Rebeca Beauty Store + Lidherma
 export const heroBanners = [
   {
     id: 1,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/645c6683-1f07-4246-bd8a-47ad6d7f59f6___4093bcb78875469e7d901dbae6ace457.gif",
-    title: "Promociones Lidherma",
-    descripcion: "Descuentos especiales en líneas seleccionadas"
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/iukytht9_image.png",
+    title: "10% OFF Primera Compra",
+    descripcion: "Suscribite y obtené el descuento en tu primera compra"
   },
   {
-    id: 2, 
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/f059946c-19b4-4c9f-8e52-046f4c829731___04a15065f2cf5eced69aaf8b05abbd08.jpg",
-    title: "Hyaluronic 4D",
-    descripcion: "Hidratación profunda con ácido hialurónico"
+    id: 2,
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/tsc1qdpj_Captura%20de%20pantalla%202025-09-14%20a%20la%28s%29%2020.58.39.png",
+    title: "Rebeca Beauty Store",
+    descripcion: "Distribuidor Oficial Exclusivo Lidherma"
   },
   {
     id: 3,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/c2d753ac-ceb0-4189-b92e-2c9333ea306f___f381c9333b1a429af242589d82314d54.jpg", 
-    title: "Renovage Anti-Age",
-    descripcion: "Tecnología avanzada contra el envejecimiento"
-  },
-  {
-    id: 4,
     url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/ee18a340-e16a-47ac-80bb-a691c461dfaf___51c0cfe06ab12560b32d002143feb914.jpg",
     title: "Dherma Sun",
     descripcion: "Protección solar inteligente"
   },
   {
-    id: 5,
-    url: "https://skinhouselidhermaarg.vtexassets.com/assets/vtex.file-manager-graphql/images/a4ddf1a2-cf36-4226-abf4-e12610bd425e___276e07d8ac054f5d2c537a5115a50ff6.jpg",
-    title: "Mímika",
-    descripcion: "Maquillaje que cuida tu piel"
+    id: 4,
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/0oxdtm4x_image.png",
+    title: "Productos Premium Lidherma",
+    descripcion: "Dermocosmética profesional para cada tipo de piel"
   }
 ];
 
