@@ -1166,7 +1166,7 @@ export const mockProducts = [
     tipo: "Crema longevidad",
     tipo_piel: ["Piel madura", "Anti-age"],
     funcion: ["Longevidad celular", "Firmeza", "Regeneración"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Cellactive+Longevity+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156159-800-auto?v=638385942452900000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 7,
     cuotas_sin_interes: true
