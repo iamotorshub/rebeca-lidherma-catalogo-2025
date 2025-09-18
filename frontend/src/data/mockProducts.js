@@ -440,7 +440,7 @@ export const mockProducts = [
     tipo: "Gel limpiador",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Control oleosidad", "Limpieza profunda", "Balance"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Matt+Balance+Cleansing+Gel",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156446-800-auto?v=638500007111530000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: false
