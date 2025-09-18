@@ -180,7 +180,7 @@ export const mockProducts = [
     tipo: "Serum despigmentante",
     tipo_piel: ["Piel con manchas", "Piel opaca"],
     funcion: ["Vitamina C", "Iluminador", "Anti-manchas"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Radian+C+Brightening+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156113-800-auto?v=638385189564330000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 16,
     cuotas_sin_interes: false
