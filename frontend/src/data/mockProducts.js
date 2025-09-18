@@ -850,7 +850,7 @@ export const mockProducts = [
     tipo: "Agua micelar",
     tipo_piel: ["Piel grasa", "Poros dilatados"],
     funcion: ["Limpieza profunda", "Control poros", "Equilibrio"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Niacinamide+Micellar+Water",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156479-800-auto?v=638634057156770000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
