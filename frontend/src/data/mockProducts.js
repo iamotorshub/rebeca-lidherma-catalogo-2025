@@ -476,7 +476,7 @@ export const mockProducts = [
     tipo: "Crema balanceadora",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Control oleosidad", "Hidratación", "Balance"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Matt+Balance+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156541-800-auto?v=638888013942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 10,
     cuotas_sin_interes: false
