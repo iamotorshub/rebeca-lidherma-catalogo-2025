@@ -1650,7 +1650,7 @@ export const mockProducts = [
     tipo: "Peeling profesional",
     tipo_piel: ["Uso profesional"],
     funcion: ["Exfoliación profunda", "Renovación", "Profesional"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Professional+Peeling+Gel",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156578-800-auto?v=638888050942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 3,
     cuotas_sin_interes: false
