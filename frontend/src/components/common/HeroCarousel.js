@@ -63,20 +63,8 @@ const HeroCarousel = () => {
               }}
             />
             
-            {/* Overlay con gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
-            
-            {/* Content overlay */}
-            <div className="absolute bottom-8 left-8 right-8 text-center">
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 md:p-6 beauty-card">
-                <h3 className="font-playfair font-bold text-lg md:text-2xl text-gray-800 mb-2">
-                  {banner.title}
-                </h3>
-                <p className="font-lato text-sm md:text-base text-gray-600">
-                  {banner.descripcion}
-                </p>
-              </div>
-            </div>
+            {/* Overlay sutil solo en los bordes para mejor lectura de controles */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
           </div>
         ))}
       </div>
