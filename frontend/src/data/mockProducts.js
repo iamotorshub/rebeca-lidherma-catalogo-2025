@@ -384,7 +384,7 @@ export const mockProducts = [
     tipo: "Contorno de ojos avanzado",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Tecnología drone", "Anti-age", "Firmeza"],
-    imagen_url: "https://drive.google.com/thumbnail?id=1SiIyJtvmEqH74btsozClDq1hqOEtHebO&sz=w1200",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156072-800-auto?v=638385111836930000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 5,
     cuotas_sin_interes: true
