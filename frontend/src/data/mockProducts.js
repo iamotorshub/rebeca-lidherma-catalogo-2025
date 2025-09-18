@@ -1574,7 +1574,7 @@ export const mockProducts = [
     tipo: "Espuma limpiadora",
     tipo_piel: ["Piel sensible", "Todos los tipos"],
     funcion: ["Limpieza suave", "Equilibrio microbioma", "Hidratación"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Biosmotic+Gentle+Cleansing+Foam",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156577-800-auto?v=638888049942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 16,
     cuotas_sin_interes: true
