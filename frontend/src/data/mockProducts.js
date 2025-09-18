@@ -1594,7 +1594,7 @@ export const mockProducts = [
     tipo: "Serum vitamina C",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Vitamina C", "Antioxidante", "Iluminador"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Dherma+Science+Vitamin+C+Serum",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156073-800-auto?v=638385112836930000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 8,
     cuotas_sin_interes: true
