@@ -1444,7 +1444,7 @@ export const mockProducts = [
     tipo: "Crema corporal",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Renovación celular", "Hidratación corporal", "Anti-age"],
-    imagen_url: "https://via.placeholder.com/400x400/2d5aa0/ffffff?text=Renovage+Body+Cream",
+    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156531-800-auto?v=638888003942670000&width=800&height=auto&aspect=true",
     disponible: true,
     stock: 9,
     cuotas_sin_interes: false
