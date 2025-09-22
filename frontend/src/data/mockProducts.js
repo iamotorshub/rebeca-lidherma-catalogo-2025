@@ -299,6 +299,46 @@ export const mediosPago = [
   }
 ];
 
+// Configuración de WhatsApp
+export const whatsappConfig = {
+  phoneNumber: "5492611234567",
+  defaultMessage: "¡Hola! Me interesa conocer más sobre los productos de Rebeca Beauty Store 💄"
+};
+
+// FAQs
+export const faqs = [
+  {
+    id: "1",
+    question: "¿Los productos son originales?",
+    answer: "Sí, todos nuestros productos son 100% originales LIDHERMA. Trabajamos directamente con la marca para garantizar la autenticidad."
+  },
+  {
+    id: "2", 
+    question: "¿Hacen envíos a todo el país?",
+    answer: "Realizamos envíos a toda Argentina. En Gran Mendoza tenemos delivery con Uber Eats (30-45 min). Para otras provincias coordinamos envíos por correo."
+  },
+  {
+    id: "3",
+    question: "¿Qué medios de pago aceptan?",
+    answer: "Aceptamos tarjetas de crédito (hasta 12 cuotas sin interés), transferencia bancaria (10% descuento), efectivo y Mercado Pago."
+  },
+  {
+    id: "4",
+    question: "¿Tienen garantía los productos?",
+    answer: "Todos los productos tienen garantía. Si no estás satisfecho/a, tenés 30 días para cambios por productos en perfecto estado."
+  },
+  {
+    id: "5",
+    question: "¿Puedo consultar sobre rutinas de cuidado?",
+    answer: "¡Por supuesto! Rebeca es cosmetóloga profesional y puede asesorarte sobre la rutina ideal para tu tipo de piel. Consultá por WhatsApp."
+  },
+  {
+    id: "6",
+    question: "¿Tienen productos para profesionales?",
+    answer: "Sí, manejamos precios especiales para profesionales de la belleza. Contactanos para conocer nuestros precios mayoristas."
+  }
+];
+
 // Hero banners para el carrusel - con imágenes oficiales proporcionadas
 export const heroBanners = [
   {
