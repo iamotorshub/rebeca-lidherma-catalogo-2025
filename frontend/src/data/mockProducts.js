@@ -250,11 +250,19 @@ export const mockLineas = [
 // Configuración de la tienda
 export const storeConfig = {
   name: "Rebeca Beauty Store",
-  email: "rebecabeautystore@gmail.com",
-  phone: "+54 9 261 123-4567",
-  whatsapp: "+54 9 261 123-4567",
-  instagram: "@rebecabeautystore",
-  address: "Mendoza, Argentina",
+  descripcion: "Especialistas en productos cosméticos profesionales LIDHERMA",
+  contacto: {
+    email: "rebecabeautystore@gmail.com",
+    phone: "+54 9 261 123-4567",
+    whatsapp: "5492611234567",
+    instagram: "@rebecabeautystore",
+    direccion: "Mendoza, Argentina"
+  },
+  cosmetologa: {
+    nombre: "Rebeca",
+    matricula: "1234",
+    especialidad: "Cosmetología Profesional"
+  },
   horarios: {
     lunes_viernes: "9:00 - 18:00",
     sabados: "9:00 - 14:00",
@@ -264,7 +272,13 @@ export const storeConfig = {
     uber_eats: true,
     zona_cobertura: "Gran Mendoza",
     tiempo_entrega: "30-45 min"
-  }
+  },
+  // Compatibilidad con propiedades anteriores
+  email: "rebecabeautystore@gmail.com",
+  phone: "+54 9 261 123-4567",
+  whatsapp: "+54 9 261 123-4567",
+  instagram: "@rebecabeautystore",
+  address: "Mendoza, Argentina"
 };
 
 // Medios de pago
