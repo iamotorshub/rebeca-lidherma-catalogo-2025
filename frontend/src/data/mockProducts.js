@@ -225,6 +225,80 @@ export const mockProducts = [
   }
 ];
 
+// Categorías para filtros
+export const mockCategories = [
+  { id: "1", name: "Cuidado de la piel", slug: "cuidado-piel" },
+  { id: "2", name: "Solares", slug: "solares" },
+  { id: "3", name: "Maquillaje", slug: "maquillaje" }
+];
+
+// Líneas de productos
+export const mockLineas = [
+  { id: "1", name: "Hyaluronic 4D", slug: "hyaluronic-4d" },
+  { id: "2", name: "Niacinamide+", slug: "niacinamide-plus" },
+  { id: "3", name: "Radian C", slug: "radian-c" },
+  { id: "4", name: "Biosmotic", slug: "biosmotic" },
+  { id: "5", name: "Hydrapore", slug: "hydrapore" },
+  { id: "6", name: "Matt Balance", slug: "matt-balance" },
+  { id: "7", name: "Plasma Infusion", slug: "plasma-infusion" },
+  { id: "8", name: "Retinol A+", slug: "retinol-a-plus" },
+  { id: "9", name: "Vita Shield", slug: "vita-shield" },
+  { id: "10", name: "Dherma Sun", slug: "dherma-sun" },
+  { id: "11", name: "Aqua Shot", slug: "aqua-shot" }
+];
+
+// Configuración de la tienda
+export const storeConfig = {
+  name: "Rebeca Beauty Store",
+  email: "rebecabeautystore@gmail.com",
+  phone: "+54 9 261 123-4567",
+  whatsapp: "+54 9 261 123-4567",
+  instagram: "@rebecabeautystore",
+  address: "Mendoza, Argentina",
+  horarios: {
+    lunes_viernes: "9:00 - 18:00",
+    sabados: "9:00 - 14:00",
+    domingos: "Cerrado"
+  },
+  delivery: {
+    uber_eats: true,
+    zona_cobertura: "Gran Mendoza",
+    tiempo_entrega: "30-45 min"
+  }
+};
+
+// Medios de pago
+export const mediosPago = [
+  {
+    id: "1",
+    name: "Tarjetas de Crédito",
+    description: "Visa, Mastercard, American Express",
+    icon: "CreditCard",
+    cuotas: "Hasta 12 cuotas sin interés"
+  },
+  {
+    id: "2", 
+    name: "Transferencia Bancaria",
+    description: "10% de descuento",
+    icon: "Package",
+    cuotas: "Pago único"
+  },
+  {
+    id: "3",
+    name: "Efectivo",
+    description: "En sucursal o contra entrega",
+    icon: "CheckCircle2",
+    cuotas: "Pago único"
+  },
+  {
+    id: "4",
+    name: "Mercado Pago",
+    description: "QR, Link de pago",
+    icon: "Zap", 
+    cuotas: "Hasta 6 cuotas"
+  }
+];
+
 // Hero banners para el carrusel - con imágenes oficiales proporcionadas
 export const heroBanners = [
   {
