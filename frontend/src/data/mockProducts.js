@@ -273,6 +273,11 @@ export const storeConfig = {
     zona_cobertura: "Gran Mendoza",
     tiempo_entrega: "30-45 min"
   },
+  servicios: {
+    descuento_transferencia: true,
+    envio_gratis_desde: 60000,
+    cuotas_sin_interes: 12
+  },
   // Compatibilidad con propiedades anteriores
   email: "rebecabeautystore@gmail.com",
   phone: "+54 9 261 123-4567",
