@@ -16,8 +16,8 @@ export const mockProducts = [
     tipo: "Espuma limpiadora",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación profunda", "Limpieza suave", "Ácido hialurónico"],
-    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_cleansing_foam1_310xauto.jpg",
-    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_cleansing_foam1_310xauto.jpg",
+    imagen_url: "https://lidherma.com/thumbnails/lidherma_hyaluronic_4d_cleansing_foam1_310xauto.jpg",
+    imagen_profesional_url: "https://lidherma.com/thumbnails/lidherma_hyaluronic_4d_cleansing_foam1_310xauto.jpg",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
