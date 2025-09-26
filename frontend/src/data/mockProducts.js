@@ -1,8 +1,8 @@
-// PRODUCTOS LIDHERMA PARA EMERGENT STORE - NOMBRES EN INGLÉS SEGÚN SITIO OFICIAL
-// Actualizado con datos del CSV proporcionado por el usuario - FUNCIONALIDAD INTERNA
+// CATÁLOGO DIGITAL LIDHERMA COMPLETO - REBECA BEAUTY STORE
+// PRODUCTOS PROFESIONALES CON URLs OFICIALES DEL VADEMÉCUM PROFESIONAL
 
 export const mockProducts = [
-  // HYALURONIC 4D - Hidratación multidimensional
+  // HYALURONIC 4D - Hidratación multidimensional ✅
   {
     id: "1",
     slug: "hyaluronic-4d-cleansing-foam-145ml",
@@ -16,7 +16,8 @@ export const mockProducts = [
     tipo: "Espuma limpiadora",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación profunda", "Limpieza suave", "Ácido hialurónico"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156090-800-auto?v=638385163506830000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_cleansing_foam1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_cleansing_foam1_310xauto.jpg",
     disponible: true,
     stock: 15,
     cuotas_sin_interes: false
@@ -34,7 +35,8 @@ export const mockProducts = [
     tipo: "Contorno de ojos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación profunda", "Anti-age", "Firmeza"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156088-800-auto?v=638385162665170000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_eyes1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_eyes1_310xauto.jpg",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: true
@@ -52,7 +54,8 @@ export const mockProducts = [
     tipo: "Crema facial",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación profunda", "Anti-age", "Firmeza"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156087-800-auto?v=638385162357030000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_face_cream1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_face_cream1_310xauto.jpg",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: true
@@ -70,7 +73,8 @@ export const mockProducts = [
     tipo: "Crema rica",
     tipo_piel: ["Piel seca", "Piel muy seca"],
     funcion: ["Hidratación intensiva", "Nutrición", "Reparación"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156089-800-auto?v=638385163279400000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_rich_cream1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_rich_cream1_310xauto.jpg",
     disponible: true,
     stock: 10,
     cuotas_sin_interes: true
@@ -88,15 +92,35 @@ export const mockProducts = [
     tipo: "Serum facial",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Hidratación profunda", "Anti-age", "Firmeza"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156086-800-auto?v=638385160234300000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_serum1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_serum1_310xauto.jpg",
     disponible: true,
     stock: 14,
     cuotas_sin_interes: true
   },
-
-  // NIACINAMIDE+ - Tratamiento de poros
   {
     id: "6",
+    slug: "hyaluronic-4d-face-mask-sachet",
+    linea: "Hyaluronic 4D",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Hidratación multidimensional",
+    producto: "Face Mask",
+    presentacion: "Sachet",
+    precio_profesional_ARS: 1500,
+    precio_publico_ARS: 2500,
+    tipo: "Mascarilla facial",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Hidratación intensiva", "Efecto flash", "Ácido hialurónico"],
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_face_mask1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_hyaluronic_4d_face_mask1_310xauto.jpg",
+    disponible: true,
+    stock: 25,
+    cuotas_sin_interes: false
+  },
+
+  // NIACINAMIDE+ - Tratamiento de poros ✅
+  {
+    id: "7",
     slug: "niacinamide-micellar-water-190ml",
     linea: "Niacinamide+",
     categoria_L1: "Cuidado de la piel",
@@ -108,13 +132,14 @@ export const mockProducts = [
     tipo: "Agua micelar",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Limpieza profunda", "Control poros", "Equilibrio"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156479-800-auto?v=638634057156770000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/niacinamide_micellar_water_foto_producto1_310xauto.png",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/niacinamide_micellar_water_foto_producto1_310xauto.png",
     disponible: true,
     stock: 20,
     cuotas_sin_interes: false
   },
   {
-    id: "7",
+    id: "8",
     slug: "niacinamide-serum-30g",
     linea: "Niacinamide+",
     categoria_L1: "Cuidado de la piel",
@@ -126,13 +151,14 @@ export const mockProducts = [
     tipo: "Serum facial",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Control poros", "Equilibrio", "Hidratación"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156475-800-auto?v=638634045119200000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/niacinamide_serum_foto_producto1_310xauto.png",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/niacinamide_serum_foto_producto1_310xauto.png",
     disponible: true,
     stock: 16,
     cuotas_sin_interes: true
   },
   {
-    id: "8",
+    id: "9",
     slug: "niacinamide-cream-50g",
     linea: "Niacinamide+",
     categoria_L1: "Cuidado de la piel",
@@ -144,15 +170,16 @@ export const mockProducts = [
     tipo: "Crema facial",
     tipo_piel: ["Piel grasa", "Piel mixta"],
     funcion: ["Control poros", "Equilibrio", "Hidratación"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156482-800-auto?v=638634060788630000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/niacinamide_cream_foto_producto1_310xauto.png",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/niacinamide_cream_foto_producto1_310xauto.png",
     disponible: true,
     stock: 12,
     cuotas_sin_interes: true
   },
 
-  // RADIAN C - Despigmentante
+  // RADIAN C - Despigmentante ✅
   {
-    id: "9",
+    id: "10",
     slug: "radian-c-brightening-serum-30g",
     linea: "Radian C",
     categoria_L1: "Cuidado de la piel",
@@ -164,13 +191,14 @@ export const mockProducts = [
     tipo: "Serum despigmentante",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Despigmentante", "Iluminador", "Vitamina C"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156113-800-auto?v=638385189564330000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_brightening_serum1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_brightening_serum1_310xauto.jpg",
     disponible: true,
     stock: 18,
     cuotas_sin_interes: true
   },
   {
-    id: "10",
+    id: "11",
     slug: "radian-c-lightening-face-cream-50g",
     linea: "Radian C",
     categoria_L1: "Cuidado de la piel",
@@ -182,13 +210,14 @@ export const mockProducts = [
     tipo: "Crema despigmentante",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Despigmentante", "Hidratación", "Vitamina C"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156118-800-auto?v=638385192879970000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_lightening_face_cream1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_lightening_face_cream1_310xauto.jpg",
     disponible: true,
     stock: 14,
     cuotas_sin_interes: true
   },
   {
-    id: "11",
+    id: "12",
     slug: "radian-c-hand-cream-50g",
     linea: "Radian C",
     categoria_L1: "Cuidado de la piel",
@@ -200,13 +229,14 @@ export const mockProducts = [
     tipo: "Crema de manos",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Despigmentante", "Hidratación", "Protección"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156116-800-auto?v=638385192141430000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_hand_cream1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_hand_cream1_310xauto.jpg",
     disponible: true,
     stock: 22,
     cuotas_sin_interes: false
   },
   {
-    id: "12",
+    id: "13",
     slug: "radian-c-firming-body-cream-180g",
     linea: "Radian C",
     categoria_L1: "Cuidado de la piel",
@@ -218,9 +248,107 @@ export const mockProducts = [
     tipo: "Crema corporal",
     tipo_piel: ["Todos los tipos"],
     funcion: ["Firmeza", "Vitamina C", "Hidratación"],
-    imagen_url: "https://sellercenterlidhermaarg.vtexassets.com/arquivos/ids/156563-800-auto?v=638888035942670000&width=800&height=auto&aspect=true",
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_firming_body_cream1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_firming_body_cream1_310xauto.jpg",
     disponible: true,
     stock: 8,
+    cuotas_sin_interes: false
+  },
+  {
+    id: "14",
+    slug: "radian-c-revitalizing-mask-sachet",
+    linea: "Radian C",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Despigmentante",
+    producto: "Revitalizing Mask",
+    presentacion: "Sachet",
+    precio_profesional_ARS: 1500,
+    precio_publico_ARS: 2500,
+    tipo: "Mascarilla facial",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Despigmentante", "Revitalizante", "Vitamina C"],
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_revitalizing_mask1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_radian_c_revitalizing_mask1_310xauto.jpg",
+    disponible: true,
+    stock: 25,
+    cuotas_sin_interes: false
+  },
+  {
+    id: "15",
+    slug: "radian-c-face-mask-sachet",
+    linea: "Radian C",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Despigmentante",
+    producto: "Face Mask",
+    presentacion: "Sachet",
+    precio_profesional_ARS: 1500,
+    precio_publico_ARS: 2500,
+    tipo: "Mascarilla facial",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Despigmentante", "Iluminador", "Vitamina C"],
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/radian_c_face_mask_foto_final_cuadrada1_310xauto.png",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/radian_c_face_mask_foto_final_cuadrada1_310xauto.png",
+    disponible: true,
+    stock: 25,
+    cuotas_sin_interes: false
+  },
+
+  // BIOSMOTIC - Hidratación profunda ✅
+  {
+    id: "16",
+    slug: "biosmotic-water-drops-30g",
+    linea: "Biosmotic",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Hidratación profunda",
+    producto: "Water Drops",
+    presentacion: "30g",
+    precio_profesional_ARS: 23500,
+    precio_publico_ARS: 36000,
+    tipo: "Serum hidratante",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Hidratación profunda", "Renovación", "Equilibrio"],
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_biosmotic_water_drops1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_biosmotic_water_drops1_310xauto.jpg",
+    disponible: true,
+    stock: 16,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "17",
+    slug: "biosmotic-water-cream-50g",
+    linea: "Biosmotic",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Hidratación profunda",
+    producto: "Water Cream",
+    presentacion: "50g",
+    precio_profesional_ARS: 23000,
+    precio_publico_ARS: 38000,
+    tipo: "Crema hidratante",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Hidratación profunda", "Renovación", "Equilibrio"],
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_biosmotic_water_cream1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_biosmotic_water_cream1_310xauto.jpg",
+    disponible: true,
+    stock: 12,
+    cuotas_sin_interes: true
+  },
+  {
+    id: "18",
+    slug: "biosmotic-water-booster-75g",
+    linea: "Biosmotic",
+    categoria_L1: "Cuidado de la piel",
+    categoria_L2: "Hidratación profunda",
+    producto: "Water Booster",
+    presentacion: "75g",
+    precio_profesional_ARS: 15000,
+    precio_publico_ARS: 25000,
+    tipo: "Potenciador hidratante",
+    tipo_piel: ["Todos los tipos"],
+    funcion: ["Hidratación intensiva", "Renovación", "Equilibrio"],
+    imagen_url: "https://www.lidherma.com.ar/thumbnails/lidherma_biosmotic_water_booster1_310xauto.jpg",
+    imagen_profesional_url: "https://www.lidherma.com.ar/thumbnails/lidherma_biosmotic_water_booster1_310xauto.jpg",
+    disponible: true,
+    stock: 18,
     cuotas_sin_interes: false
   }
 ];
