@@ -4492,15 +4492,29 @@ export const mockProducts = [
 
 // Configuración de la tienda
 export const storeConfig = {
-  nombre: "Rebeca Beauty Store",
-  descripcion: "Cosmética Profesional LIDHERMA - Distribuidor Autorizado",
-  whatsapp: "+5491234567890",
-  email: "rebeca@beautystore.com",
-  instagram: "@rebeca.beautystore",
-  direccion: "Buenos Aires, Argentina",
-  matricula: "MAT-001-2025",
-  descuento_transferencia: 10,
-  servicios: ["Asesoramiento profesional", "Delivery gratuito CABA", "Productos originales garantizados"]
+  name: "Rebeca Beauty Store",
+  slogan: "Cosmética Profesional LIDHERMA - Distribuidor Autorizado",
+  ubicacion: "Bahía Blanca, Buenos Aires",
+  contacto: {
+    whatsapp: "5492915660198",
+    telefono: "+54 291 566-0198",
+    email: "rebeca@beautystore.com",
+    instagram: "@rebeca.beautystore"
+  },
+  cosmetologa: {
+    matricula: "1624"
+  },
+  horarios: {
+    lunes_viernes: "9:00 a 18:00hs",
+    sabados: "9:00 a 13:00hs",
+    domingos: "Cerrado",
+    whatsapp_247: true
+  },
+  servicios: {
+    descuento_transferencia: true,
+    envio_gratis_desde: 70000,
+    delivery_uber: true
+  }
 };
 
 export const whatsappConfig = {
