@@ -4551,3 +4551,69 @@ export const categories = [
 ];
 
 export const lineas = categories;
+
+// Hero Banners para el carrusel principal
+export const heroBanners = [
+  {
+    id: 1,
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/ur6c7mg4_Captura%20de%20pantalla%202025-09-18%20a%20la%28s%29%2004.56.21.png",
+    title: "Cosmética Profesional LIDHERMA",
+    descripcion: "Los mejores productos para el cuidado de tu piel"
+  },
+  {
+    id: 2,
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/uk5m6mr1_image.png",
+    title: "Promociones Especiales",
+    descripcion: "Descuentos y ofertas exclusivas en productos seleccionados"
+  },
+  {
+    id: 3,
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/ukx7hfbe_image.png",
+    title: "Líneas Premium",
+    descripcion: "Descubre nuestras líneas más innovadoras"
+  },
+  {
+    id: 4,
+    url: "https://customer-assets.emergentagent.com/job_pastel-ecommerce/artifacts/5zmfmbn7_image.png",
+    title: "Rebeca Beauty Store",
+    descripcion: "Tu distribuidor autorizado LIDHERMA de confianza"
+  }
+];
+
+// Categorías para filtros
+export const mockCategories = [
+  { id: "1", name: "Cuidado de la piel", slug: "cuidado-piel" },
+  { id: "2", name: "Solares", slug: "solares" },
+  { id: "3", name: "Maquillaje", slug: "maquillaje" },
+  { id: "4", name: "Peeling", slug: "peeling" },
+  { id: "5", name: "Fórmulas Faciales", slug: "formulas-faciales" },
+  { id: "6", name: "Fórmulas Corporales", slug: "formulas-corporales" },
+  { id: "7", name: "Activos Concentrados", slug: "activos-concentrados" },
+  { id: "8", name: "Líneas Anti-Age", slug: "anti-age" },
+  { id: "9", name: "Hidratación", slug: "hidratacion" }
+];
+
+// Líneas de productos completas
+export const mockLineas = [
+  { id: "1", name: "Hyaluronic 4D", slug: "hyaluronic-4d", color: "#4F9EF8" },
+  { id: "2", name: "Niacinamide+", slug: "niacinamide-plus", color: "#22C55E" },
+  { id: "3", name: "Radian C", slug: "radian-c", color: "#F59E0B" },
+  { id: "4", name: "Biosmotic", slug: "biosmotic", color: "#06B6D4" },
+  { id: "5", name: "Hydrapore", slug: "hydrapore", color: "#8B5CF6" },
+  { id: "6", name: "Matt Balance", slug: "matt-balance", color: "#10B981" },
+  { id: "7", name: "Plasma Infusion", slug: "plasma-infusion", color: "#F59E0B" },
+  { id: "8", name: "Retinol A+", slug: "retinol-a-plus", color: "#EF4444" },
+  { id: "9", name: "Acnex Depure", slug: "acnex-depure", color: "#06B6D4" },
+  { id: "10", name: "Activos Concentrados", slug: "activos-concentrados", color: "#8B5CF6" },
+  { id: "11", name: "Aqua Shot", slug: "aqua-shot", color: "#06B6D4" },
+  { id: "12", name: "CB2 Power", slug: "cb2-power", color: "#EF4444" },
+  { id: "13", name: "Cellactive", slug: "cellactive", color: "#22C55E" },
+  { id: "14", name: "Detoxify", slug: "detoxify", color: "#10B981" },
+  { id: "15", name: "Dherma Science", slug: "dherma-science", color: "#4F9EF8" },
+  { id: "16", name: "Dherma Sun", slug: "dherma-sun", color: "#F59E0B" },
+  { id: "17", name: "Renovage", slug: "renovage", color: "#8B5CF6" },
+  { id: "18", name: "Vita B12+", slug: "vita-b12-plus", color: "#22C55E" },
+  { id: "19", name: "Mímika", slug: "mimika", color: "#E11D48" },
+  { id: "20", name: "Fórmulas Faciales", slug: "formulas-faciales", color: "#06B6D4" },
+  { id: "21", name: "Fórmulas Corporales", slug: "formulas-corporales", color: "#10B981" }
+];
