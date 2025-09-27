@@ -32,13 +32,13 @@ const FAQAccordion = () => {
 
           {/* FAQ Items */}
           <div className="space-y-4">
-            {faqs.map((faq) => {
-              const isOpen = openItems.has(faq.id);
+            {faqs.map((faq, index) => {
+              const isOpen = openItems.has(faq.id || index);
               
               return (
-                <div key={faq.id} className="beauty-card overflow-hidden">
+                <div key={faq.id || index} className="beauty-card overflow-hidden">
                   <button
-                    onClick={() => toggleItem(faq.id)}
+                    onClick={() => toggleItem(faq.id || index)}
                     className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-pink-50 transition-colors"
                   >
                     <h3 className="font-playfair font-semibold text-lg text-gray-800 pr-4">
