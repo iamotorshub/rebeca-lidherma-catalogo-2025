@@ -4518,8 +4518,8 @@ export const storeConfig = {
 };
 
 export const whatsappConfig = {
-  numero: "+5491234567890",
-  mensaje_base: "¡Hola! Me interesa consultar sobre productos LIDHERMA:",
+  phoneNumber: "5492915660198",
+  defaultMessage: "¡Hola Rebeca! Me gustaría información sobre productos Lidherma 💆‍♀️✨",
   horarios: "Lunes a Viernes 9:00 a 18:00hs"
 };
 
