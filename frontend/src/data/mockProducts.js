@@ -4617,3 +4617,35 @@ export const mockLineas = [
   { id: "20", name: "Fórmulas Faciales", slug: "formulas-faciales", color: "#06B6D4" },
   { id: "21", name: "Fórmulas Corporales", slug: "formulas-corporales", color: "#10B981" }
 ];
+
+// Medios de pago
+export const mediosPago = [
+  {
+    id: "1",
+    name: "Tarjetas de Crédito",
+    description: "Visa, Mastercard, American Express",
+    icon: "CreditCard",
+    cuotas: "Hasta 12 cuotas sin interés"
+  },
+  {
+    id: "2", 
+    name: "Transferencia Bancaria",
+    description: "10% de descuento",
+    icon: "Package",
+    cuotas: "Pago único"
+  },
+  {
+    id: "3",
+    name: "Efectivo",
+    description: "En sucursal o contra entrega",
+    icon: "CheckCircle2",
+    cuotas: "Pago único"
+  },
+  {
+    id: "4",
+    name: "Mercado Pago",
+    description: "QR, Link de pago",
+    icon: "Zap", 
+    cuotas: "Hasta 6 cuotas"
+  }
+];
