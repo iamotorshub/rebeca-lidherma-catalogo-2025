@@ -4525,20 +4525,34 @@ export const whatsappConfig = {
 
 export const faqs = [
   {
+    id: 1,
     pregunta: "¿Los productos son originales?",
     respuesta: "Sí, todos nuestros productos LIDHERMA son 100% originales y cuentan con garantía del laboratorio."
   },
   {
+    id: 2,
     pregunta: "¿Hacen delivery?",
     respuesta: "Sí, realizamos delivery gratuito en CABA y GBA. Para el interior consultanos por costo de envío."
   },
   {
+    id: 3,
     pregunta: "¿Tienen descuento por transferencia?",
     respuesta: "Sí, ofrecemos 10% de descuento pagando por transferencia bancaria."
   },
   {
+    id: 4,
     pregunta: "¿Puedo consultar sobre mi tipo de piel?",
     respuesta: "¡Por supuesto! Rebeca te asesora personalmente para encontrar los productos ideales para tu piel."
+  },
+  {
+    id: 5,
+    pregunta: "¿Cuáles son los horarios de atención?",
+    respuesta: "Atendemos de lunes a viernes de 9:00 a 18:00hs y sábados de 9:00 a 13:00hs. WhatsApp disponible 24/7."
+  },
+  {
+    id: 6,
+    pregunta: "¿Tienen stock de todos los productos?",
+    respuesta: "Mantenemos stock de los productos más populares. Para productos específicos, consultanos disponibilidad por WhatsApp."
   }
 ];
 
